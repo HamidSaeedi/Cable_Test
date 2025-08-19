@@ -1,0 +1,65 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+In_profile                                                                        0x0160      96
+Out_profile                                                                       0x01C0      96
+cable_func_handle                                                                 0x0220       2
+flag                                                                              0x0222       2
+Cable_ID                                                                          0x0224       1
+Error_Cable                                                                       0x0225       8
+Error_Symbol                                                                      0x022D       8
+Input                                                                             0x0235       8
+Output                                                                            0x023D       8
+profile_lcd_menu                                                                  0x0245       2
+Port_Set                                                                          0x0247       2
+Read_Pin                                                                          0x0249       2
+Menue_Cable_Select_Num                                                            0x024B       1
+flags_menu                                                                        0x024C       1
+page                                                                              0x024D       1
+flags_b                                                                           0x024E       1
+Menue_Main_Srting                                                                 0x024F      64
+lcd_buffer                                                                        0x028F      16
+_seed                                                                             0x029F       4
+_base_y                                                                           0x02A3       4
+_lcd_y                                                                            0x02A7       1
+_lcd_maxx                                                                         0x02A8       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+port_vlaue                                                                        R5           1
+Menue_Main_Num                                                                    R4           1
+Menu_Cable_Define_Prof                                                            R7           1
+Menu_Cable_Define_Index_In                                                        R6           1
+Menu_Cable_Define_Index_Out                                                       R9           1
+Menu_Cable_Define_Index_In_Num                                                    R8           1
+Menu_Cable_Define_Index_Out_Num                                                   R11          1
+Read_Pin_B                                                                        R12,R13      2
+_lcd_x                                                                            R10          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ext_int2_isr                                                                      0x000D6     28
+timer0_ovf_isr                                                                    0x000F2     53
+main                                                                              0x00127     82
+Menu_Main                                                                         0x00179     32
+Menu_Cable_Select                                                                 0x00199     41
+Menu_About_Me                                                                     0x00236     27
+put_buff_G100                                                                     0x00251     63
+_print_G100                                                                       0x00290    308
+sprintf                                                                           0x003C4     52
+memset                                                                            0x003F8     16
+strlen                                                                            0x00408     12
+strlenf                                                                           0x00414     13
+_lcd_write_nibble_G103                                                            0x00421     20
+_lcd_write_data                                                                   0x00435     12
+lcd_gotoxy                                                                        0x00441     15
+lcd_clear                                                                         0x00450     13
+lcd_putchar                                                                       0x0045D     26
+lcd_puts                                                                          0x00477     17
+lcd_init                                                                          0x00488     47
