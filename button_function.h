@@ -51,4 +51,7 @@ extern struct FLAGS_B flags_b;
 
 
 void main_menu_button_manager_func(void);
+void cable_select_button_manager_func(void);
+void cable_define_button_manager_func(void);
+void about_me_button_manager_func(void);
 #endif

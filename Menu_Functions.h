@@ -20,9 +20,18 @@ struct FLAGS_MENU
     uint8_t reserved:5;
 };
 
-
+extern int8_t Menue_Main_Num;
 extern int8_t Menue_Cable_Select_Num;
+extern uint8_t Menu_Cable_Define_Prof;
+extern uint8_t Menu_Cable_Define_Index_In;
+extern uint8_t Menu_Cable_Define_Index_Out;
+extern uint8_t Menu_Cable_Define_Index_In_Num;
+extern uint8_t Menu_Cable_Define_Index_Out_Num;
 extern struct FLAGS_MENU flags_menu;
+
+
+
+
 extern uint8_t page;
 int8_t Menu_Main(void);
 int8_t  Menu_Cable_Select(void);

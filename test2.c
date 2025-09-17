@@ -28,16 +28,16 @@ uint8_t read_PIN(void);
 interrupt [EXT_INT2] void ext_int2_isr(void)
 {
 
-  if(PINB.3==1)
+  if(PINB.3==0)
   {
     flags_b.enter=1;
   }
 
-  if(PINB.5==1)
+  if(PINB.5==0)
   {
     flags_b.up=1;
   }
-  if(PINB.4==1)
+  if(PINB.4==0)
   {
     flags_b.down=1;
   }
@@ -56,15 +56,19 @@ switch (page)
 {
     case MAIN_PAGE:
         Menu_Main();
+        main_menu_button_manager_func();
         break;
     case RUN_TEST_PAGE:
         Menu_Cable_Select();
+        cable_select_button_manager_func();
         break;
     case CABLE_SELSECT_PAGE:
         Menu_Cable_Define();
+        cable_define_button_manager_func();
         break;
     case ABOUT_ME_PAGE:
         Menu_About_Me();
+        about_me_button_manager_func();
         break;
 }    
 

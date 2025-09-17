@@ -33,16 +33,16 @@ void main_menu_button_manager_func(void)
     else if(UP_BUTTON_PUSHED==1)
     {
         flags_b.up=0;
-        Menue_Cable_Select_Num++;
-        if(Menue_Cable_Select_Num>=(MAX_MAIN_MENU_ITEM-1))
-            Menue_Cable_Select_Num=0;
+        Menue_Main_Num++;
+        if(Menue_Main_Num>=(MAX_MAIN_MENU_ITEM-1))
+            Menue_Main_Num=0;
     }
     else if(DOWN_BUTTON_PUSHED==1)
     {
         flags_b.down=0;
-        Menue_Cable_Select_Num--;
-        if(Menue_Cable_Select_Num<0)
-            Menue_Cable_Select_Num=(MAX_MAIN_MENU_ITEM-1);
+        Menue_Main_Num--;
+        if(Menue_Main_Num<0)
+            Menue_Main_Num=(MAX_MAIN_MENU_ITEM-1);
     }
 
 }
