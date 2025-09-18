@@ -8,12 +8,13 @@
 
 //Declare your global variables here                                   
 void write_port(uint8_t);
-uint8_t port_vlaue;
 void Delay(uint32_t);
 void Cable_Check(void);
-void Menu(void);
-uint8_t read_PIN(void);
-
+uint8_t __read_PIN__(void);
+ int8_t (*profile_lcd_menu)() = &Menu_Cable_Select;
+ void (*Port_Set)(uint8_t ) = write_port;
+ uint8_t (*Read_Pin)() = __read_PIN__;
+ void (*sleep_ms)(uint32_t) = Delay;
 
 
 
@@ -59,10 +60,14 @@ switch (page)
         main_menu_button_manager_func();
         break;
     case RUN_TEST_PAGE:
+        Menu_Run_Test();
+        //run_test_button_manager_func();
+        break;
+    case CABLE_SELSECT_PAGE:
         Menu_Cable_Select();
         cable_select_button_manager_func();
         break;
-    case CABLE_SELSECT_PAGE:
+     case CABLE_DEFINE_PAGE:
         Menu_Cable_Define();
         cable_define_button_manager_func();
         break;
@@ -76,29 +81,27 @@ switch (page)
 
 
 void main(void)
-
 {
 // Declare your local variables here
 
-In_profile[1][0] = 0x01;
-In_profile[1][1] = 0x02;
-In_profile[1][2] = 0x04;
-In_profile[1][3] = 0x08;
-In_profile[1][4] = 0x10;
-In_profile[1][5] = 0x20;
-In_profile[1][6] = 0x40;
-In_profile[1][7] = 0x80;
 
-Out_profile[1][0] = 0x01;
-Out_profile[1][0] = 0x02;
-Out_profile[1][0] = 0x04;
-Out_profile[1][0] = 0x08;
-Out_profile[1][0] = 0x10;
-Out_profile[1][0] = 0x20;
-Out_profile[1][0] = 0x40;
-Out_profile[1][0] = 0x80;
+In_profile[0][0] = 0x01;
+In_profile[0][1] = 0x02;
+In_profile[0][2] = 0x04;
+In_profile[0][3] = 0x08;
+In_profile[0][4] = 0x10;
+In_profile[0][5] = 0x20;
+In_profile[0][6] = 0x40;
+In_profile[0][7] = 0x80;
 
-
+Out_profile[0][0] = 0x01;
+Out_profile[0][1] = 0x02;
+Out_profile[0][2] = 0x04;
+Out_profile[0][3] = 0x08;
+Out_profile[0][4] = 0x10;
+Out_profile[0][5] = 0x20;
+Out_profile[0][6] = 0x40;
+Out_profile[0][7] = 0x80;
 
 
 
@@ -177,7 +180,7 @@ delay_ms(T);
 
 }
 
-uint8_t read_PIN(void){
+uint8_t __read_PIN__(void){
 
 return PIND;
 

@@ -10,7 +10,7 @@ uint8_t Menu_Cable_Define_Index_Out=0;
 uint8_t Menu_Cable_Define_Index_In_Num=0;
 uint8_t Menu_Cable_Define_Index_Out_Num=0;
 struct FLAGS_MENU flags_menu;
-uint8_t page=4;
+uint8_t page=RUN_TEST_PAGE;
 int8_t Menu_Main (void)
 {
 	lcd_gotoxy(0,0);
@@ -35,19 +35,59 @@ int8_t Menu_Main (void)
 int8_t  Menu_Cable_Select(void)
 {
 	lcd_gotoxy(0,0);
-	sprintf(lcd_buffer,"-> cable%02d",Menue_Cable_Select_Num);
+	sprintf(lcd_buffer,"-> cable%02d     ",Menue_Cable_Select_Num);
 	lcd_puts(lcd_buffer);
 	lcd_gotoxy(0,1);
-	sprintf(lcd_buffer,"cable%02d",Menue_Cable_Select_Num+1);
+	sprintf(lcd_buffer,"   cable%02d    ",Menue_Cable_Select_Num+1);
 	lcd_puts(lcd_buffer);
 	memset(lcd_buffer,0,sizeof(lcd_buffer));
 	if(flag.enter_button==1)
 	{
 		flag.enter_button=0;
+		cable_func_handle.cable_id=Menue_Cable_Select_Num;
 		return Menue_Cable_Select_Num;
 	}
 	return -1;
 }
+
+int8_t Menu_Run_Test(void)
+{
+	//Profile_ID();
+	if( cable_func_handle.error_other==MAXPROFILELIMIT)
+	{
+		//print the error in here!
+		return 0;
+	}
+	else
+	{
+	Cable_Check();
+	Cable_Error_Check();
+	lcd_gotoxy(0,0);
+	memset(lcd_buffer,' ',sizeof(lcd_buffer));
+	sprintf(lcd_buffer,"--> %s",cable_func_handle.error_symbol);
+	lcd_puts(lcd_buffer);
+	if(cable_func_handle.pass_pins==MAX_CABLE_PINS)
+	{
+		lcd_gotoxy(0,1);
+		memset(lcd_buffer,' ',sizeof(lcd_buffer));
+		sprintf(lcd_buffer,"     PASS!     ");
+		lcd_puts(lcd_buffer);
+		cable_func_handle.pass_pins=0;
+	}
+	else
+	{
+		lcd_gotoxy(0,1);
+		memset(lcd_buffer,' ',sizeof(lcd_buffer));
+		sprintf(lcd_buffer,"    Failed!    ");
+		lcd_puts(lcd_buffer);
+		cable_func_handle.pass_pins=0;
+	}
+	return 0;
+	}
+}
+
+
+
 
 void Menu_Cable_Define(void)
 {

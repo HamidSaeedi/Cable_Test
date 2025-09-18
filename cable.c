@@ -7,28 +7,26 @@ uint8_t In_profile[MAX_NUMBER_PROFILE][MAX_CABLE_PINS];
 uint8_t Out_profile[MAX_NUMBER_PROFILE][MAX_CABLE_PINS];
 struct FUNC_HANDLE cable_func_handle;
 struct FLAG flag;
-uint8_t Cable_ID=0;
-uint8_t Error_Cable[8];
-char Error_Symbol[8];
 
+
+
+/*
 uint8_t (*Read_Pin)(void) = NULL;
 void (*Port_Set)(uint8_t) = NULL;
 void (*sleep_ms)(uint32_t) = NULL;
-uint8_t (*profile_lcd_menu)(void) = NULL;
-
+int8_t (*profile_lcd_menu)(void) = NULL;
+*/
 
 struct FUNC_HANDLE Profile_ID(void)
 {
-    uint8_t Cable_ID;
+    uint8_t Cable_ID=0;
     Cable_ID=(*profile_lcd_menu)();
     if(Cable_ID>MAX_NUMBER_PROFILE)
     {
-        cable_func_handle.e_state=1;
-        cable_func_handle.e_code=5;
+        cable_func_handle.error_other=MAXPROFILELIMIT;
         return cable_func_handle;
     }
-    cable_func_handle.e_state=0;
-    cable_func_handle.func_return_val=Cable_ID;
+    cable_func_handle.cable_id=Cable_ID;
     return cable_func_handle;
 
 }
@@ -36,8 +34,8 @@ struct FUNC_HANDLE Profile_ID(void)
 void Cable_Check(void)
 {
     uint8_t i=0,j=0;
-    memcpy(Input,In_profile[Cable_ID],sizeof(In_profile[Cable_ID]));
-    memcpy(Output,Out_profile[Cable_ID],sizeof(Out_profile[Cable_ID]));
+    memcpy(Input,In_profile[cable_func_handle.cable_id],MAX_CABLE_PINS);
+    memcpy(Output,Out_profile[cable_func_handle.cable_id],MAX_CABLE_PINS);
     for(i=0;i<sizeof(Output);i++)
     {
         (*Port_Set)(Output[i]);
@@ -48,20 +46,20 @@ void Cable_Check(void)
             {
                 if(i!=j)
                 {
-                    Error_Cable[i]=2+i;
+                    cable_func_handle.error_cable[i]=2+i;
                     flag.connect=1;
                 }
                 else if(i==j)
                 {
                     flag.connect=1;
-                    Error_Cable[i]=0;
+                    cable_func_handle.error_cable[i]=0;
                 }
 
             }
             if((*Read_Pin)()>Input[j])
             {
                flag.connect=1;
-               Error_Cable[i]=3+i;
+               cable_func_handle.error_cable[i]=3+i;
             }
         }
         if(flag.connect==1)
@@ -70,7 +68,7 @@ void Cable_Check(void)
         }
         else if(flag.connect==0)
         {
-             Error_Cable[i]=1;
+             cable_func_handle.error_cable[i]=1;
              flag.notconnect=1;
         }
     }
@@ -82,37 +80,25 @@ struct FUNC_HANDLE Cable_Error_Check(void)
     uint8_t i=0;
     for(i=0;i<MAX_CABLE_PINS;i++)
     {
-        if(Error_Cable[i]==i+3)
+        if(cable_func_handle.error_cable[i]==i+3)
         {
-            Error_Symbol[i]='C';
+            cable_func_handle.error_symbol[i]=CONFLICT;
         }
-        else if(Error_Cable[i]==i+2)
+        else if(cable_func_handle.error_cable[i]==i+2)
         {
-             Error_Symbol[i]= 'W';
+             cable_func_handle.error_symbol[i]= WRONG;
         }
-        else if(Error_Cable[i]==0)
+        else if(cable_func_handle.error_cable[i]==0)
         {
-             Error_Symbol[i]= 'G';
+             cable_func_handle.error_symbol[i]= GOOD;
+             cable_func_handle.pass_pins++;
         }
-        else if(Error_Cable[i]==1)
+        else if(cable_func_handle.error_cable[i]==1)
         {
-             Error_Symbol[i]= 'N';
-        }
-    }
-    for(i=0;i<MAX_CABLE_PINS;i++)
-    {
-        if(Error_Symbol[i]!='G')
-        {
-            flag.test_result=0;
-            cable_func_handle.e_state=1;
-            cable_func_handle.e_code=6;
-            cable_func_handle.func_return_val=0;
-            return cable_func_handle;
+             cable_func_handle.error_symbol[i]= NOCONNECT;
         }
     }
-    cable_func_handle.e_state=0;
-    cable_func_handle.func_return_val=0;
-    cable_func_handle.e_code=0;
+
     return cable_func_handle;
 }
 

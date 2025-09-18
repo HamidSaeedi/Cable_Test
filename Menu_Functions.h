@@ -34,6 +34,7 @@ extern struct FLAGS_MENU flags_menu;
 
 extern uint8_t page;
 int8_t Menu_Main(void);
+int8_t Menu_Run_Test(void);
 int8_t  Menu_Cable_Select(void);
 void Menu_Cable_Define(void);
 void Menu_About_Me(void);

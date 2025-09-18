@@ -10,10 +10,10 @@
 #define MAX_NUMBER_PROFILE 12
 #define ERROR_CABLE_ID_SET 100
 
-#define GOOD 'G'
-#define CONFLICT 'C'
-#define WRONG 'W'
-#define NOCONNECT 'N'
+#define GOOD 0x05
+#define CONFLICT 0x06
+#define WRONG 0x07
+#define NOCONNECT 0X08
 #define MAXPROFILELIMIT 0X09
 
 
@@ -23,9 +23,9 @@ struct FUNC_HANDLE
 { 
  uint8_t error_cable[MAX_CABLE_PINS];
  uint8_t error_other;
- char error_symbol[MAX_CABLE_PINS];
+ uint8_t error_symbol[MAX_CABLE_PINS];
  uint8_t cable_id;
- uint8_t pass_pins;
+
 
 };
 struct FLAG
@@ -43,6 +43,8 @@ extern uint8_t Out_profile[MAX_NUMBER_PROFILE][MAX_CABLE_PINS];
 extern struct FUNC_HANDLE cable_func_handle;
 extern struct FLAG flag;
 extern uint8_t Cable_ID;
+extern uint8_t Error_Cable[8];
+extern char Error_Symbol[8];
 extern uint8_t Input[MAX_CABLE_PINS];
 extern uint8_t Output[MAX_CABLE_PINS];
 

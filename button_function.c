@@ -3,7 +3,7 @@
 
 struct FLAGS_B flags_b;
 
-uint8_t (*Read_Pin_B)(uint8_t,uint8_t)=NULL;
+
 
 
 
