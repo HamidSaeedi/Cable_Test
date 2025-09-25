@@ -1,9 +1,14 @@
 #include "Menu_Functions.h"
 #include "cable.h"
-char Menue_Main_Srting[4][16]={"Test Run      " , "Cable Select   " , "Cable define   " , "About Me       "};
-char lcd_buffer[16];
+char Menue_Main_Srting[4][NUM_COLUMN+1]={"Test Run" , "Cable Select" , "Cable define" , "About Me"};
+char Menue_Main_Arrow_String[2][3]={"  ","->"};
+char lcd_buffer[NUM_COLUMN];
 int8_t Menue_Main_Num=0;
+int8_t Menue_Main_Select_Num=0; //0 .. NUM_ROW
+
 int8_t Menue_Cable_Select_Num=0;
+int8_t Menue_Cable_Select_Select_Num=0;  //0 .. NUM_ROW
+
 uint8_t Menu_Cable_Define_Prof=0;
 uint8_t Menu_Cable_Define_Index_In=0;
 uint8_t Menu_Cable_Define_Index_Out=0;
@@ -11,29 +16,57 @@ uint8_t Menu_Cable_Define_Index_In_Num=0;
 uint8_t Menu_Cable_Define_Index_Out_Num=0;
 struct FLAGS_MENU flags_menu;
 uint8_t page=RUN_TEST_PAGE;
-int8_t Menu_Main (void)
+
+void Menu_Main (void)
 {
-	lcd_gotoxy(0,0);
-	memset(lcd_buffer,0,sizeof(lcd_buffer));
-	snprintf(lcd_buffer, sizeof(lcd_buffer), "->%s", Menue_Main_Srting[Menue_Main_Num]);
-	//sprintf(lcd_buffer,"->%d",Menue_Main_Num);
-	lcd_puts(lcd_buffer);
-	lcd_gotoxy(0,1);
-	memset(lcd_buffer,0,sizeof(lcd_buffer));
-	snprintf(lcd_buffer, sizeof(lcd_buffer), "%s", Menue_Main_Srting[Menue_Main_Num+1]);
-	//sprintf(lcd_buffer,"%d",Menue_Main_Num+1);
-	lcd_puts(lcd_buffer);
-	memset(lcd_buffer,0,sizeof(lcd_buffer));
-	if(flag.enter_button==1)
+	int byteWrite=0;
+	uint8_t i=0; //just a simple loop counter.
+	for(i=0;i<NUM_ROW;i++)
 	{
-		flag.enter_button=0;
-		return Menue_Main_Num;
+		lcd_gotoxy(0,i);
+		memset(lcd_buffer,' ',sizeof(lcd_buffer));
+		
+		byteWrite=snprintf(lcd_buffer, sizeof(lcd_buffer), "%s%s",Menue_Main_Arrow_String[(i==Menue_Main_Select_Num)] ,Menue_Main_Srting[Menue_Main_Num+i]);
+		/*We just fill the remainnig part of the lcd_buffer with null to insure clean update 
+		we did not use the lcd_clear becuse it cuse blinking in the lcd.
+		*/
+		// Fill remaining space with spaces
+        if(byteWrite < NUM_COLUMN && byteWrite >= 0) 
+		{
+           memset(lcd_buffer + byteWrite, ' ', NUM_COLUMN - byteWrite);
+        }
+    
+        // Ensure null termination at LCD width
+        lcd_buffer[NUM_COLUMN] = '\0';
+	    lcd_puts(lcd_buffer);
 	}
-	return -1;
+
 }
 
 int8_t  Menu_Cable_Select(void)
 {
+	int byteWrite=0;
+	uint8_t i=0; //just a simple loop counter.
+	for(i=0;i<NUM_ROW;i++)
+	{
+		lcd_gotoxy(0,i);
+		memset(lcd_buffer,' ',sizeof(lcd_buffer));
+		
+		byteWrite=snprintf(lcd_buffer, sizeof(lcd_buffer), "%sCable%02d",Menue_Main_Arrow_String[(i==Menue_Cable_Select_Select_Num)] ,Menue_Cable_Select_Num+i);
+		/*We just fill the remainnig part of the lcd_buffer with null to insure clean update 
+		we did not use the lcd_clear becuse it cuse blinking in the lcd.
+		*/
+		// Fill remaining space with spaces
+        if(byteWrite < NUM_COLUMN && byteWrite >= 0) 
+		{
+           memset(lcd_buffer + byteWrite, ' ', NUM_COLUMN - byteWrite);
+        }
+    
+        // Ensure null termination at LCD width
+        lcd_buffer[NUM_COLUMN] = '\0';
+	    lcd_puts(lcd_buffer);
+	}
+	/*
 	lcd_gotoxy(0,0);
 	sprintf(lcd_buffer,"-> cable%02d     ",Menue_Cable_Select_Num);
 	lcd_puts(lcd_buffer);
@@ -41,11 +74,12 @@ int8_t  Menu_Cable_Select(void)
 	sprintf(lcd_buffer,"   cable%02d    ",Menue_Cable_Select_Num+1);
 	lcd_puts(lcd_buffer);
 	memset(lcd_buffer,0,sizeof(lcd_buffer));
+	*/
 	if(flag.enter_button==1)
 	{
 		flag.enter_button=0;
-		cable_func_handle.cable_id=Menue_Cable_Select_Num;
-		return Menue_Cable_Select_Num;
+		cable_func_handle.cable_id=Menue_Cable_Select_Num+Menue_Cable_Select_Select_Num;
+		return Menue_Cable_Select_Num+Menue_Cable_Select_Select_Num;
 	}
 	return -1;
 }

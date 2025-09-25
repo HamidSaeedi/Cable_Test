@@ -8,11 +8,13 @@ struct FLAGS_B flags_b;
 
 
 void main_menu_button_manager_func(void)
-{    
+{  
+    int8_t Menu_Item=-1;
+    Menu_Item =  Menue_Main_Select_Num+Menue_Main_Num; 
     if(ENTER_BUTTON_PUSHED==1)
     {
         flags_b.enter=0;
-        switch (Menue_Cable_Select_Num)
+        switch (Menu_Item)
         {
         case RUN_TEST_PAGE:
             page=RUN_TEST_PAGE;
@@ -33,20 +35,38 @@ void main_menu_button_manager_func(void)
     else if(UP_BUTTON_PUSHED==1)
     {
         flags_b.up=0;
-        Menue_Main_Num++;
-        if(Menue_Main_Num>=(MAX_MAIN_MENU_ITEM-1))
-            Menue_Main_Num=0;
+        Menue_Main_Select_Num--; //0 or 1
+        if(Menue_Main_Select_Num<0)
+        {
+           Menue_Main_Num=Menue_Main_Num-NUM_ROW;
+           Menue_Main_Select_Num=NUM_ROW-1; 
+           if(Menue_Main_Num<0)
+              Menue_Main_Num=MAX_MAIN_MENU_ITEM-NUM_ROW;
+        }
+
     }
     else if(DOWN_BUTTON_PUSHED==1)
     {
         flags_b.down=0;
-        Menue_Main_Num--;
-        if(Menue_Main_Num<0)
-            Menue_Main_Num=(MAX_MAIN_MENU_ITEM-1);
+        Menue_Main_Select_Num++;
+        if(Menue_Main_Select_Num>=NUM_ROW)
+        {
+          Menue_Main_Num=Menue_Main_Num+NUM_ROW;
+          Menue_Main_Select_Num=0;  
+          if(Menue_Main_Num>=(MAX_MAIN_MENU_ITEM-1))
+             Menue_Main_Num=0;
+        }
     }
 
 }
-
+void run_test_button_manager_func(void)
+{
+    if(ENTER_BUTTON_PUSHED==1)
+    {
+         flags_b.enter=0;
+         page=MAIN_PAGE;
+    }
+}
 void cable_select_button_manager_func(void)
 {
     if(ENTER_BUTTON_PUSHED==1)
@@ -57,16 +77,28 @@ void cable_select_button_manager_func(void)
     else if(UP_BUTTON_PUSHED==1)
     {
         flags_b.up=0;
-        Menue_Cable_Select_Num++;
-        if(Menue_Cable_Select_Num>MAX_NUMBER_PROFILE)
-           Menue_Cable_Select_Num=0;
+        Menue_Cable_Select_Select_Num--;
+        if(Menue_Cable_Select_Select_Num<0)
+        {
+            Menue_Cable_Select_Select_Num=NUM_ROW-1;
+            Menue_Cable_Select_Num=Menue_Cable_Select_Num-NUM_ROW;
+            if(Menue_Cable_Select_Num<0)
+                Menue_Cable_Select_Num=MAX_NUMBER_PROFILE-NUM_ROW;
+        }
+
     }
     else if(DOWN_BUTTON_PUSHED==1)
     {
         flags_b.down=0;
-        Menue_Cable_Select_Num--;
-        if(Menue_Cable_Select_Num<0)
-            Menue_Cable_Select_Num=MAX_NUMBER_PROFILE;
+        Menue_Cable_Select_Select_Num++;
+        if(Menue_Cable_Select_Select_Num>=NUM_ROW)
+        {
+            Menue_Cable_Select_Select_Num=0;
+            Menue_Cable_Select_Num=Menue_Cable_Select_Num+NUM_ROW;
+            if(Menue_Cable_Select_Num>=(MAX_NUMBER_PROFILE-1))
+                Menue_Cable_Select_Num=0;
+        }
+
     }
 }
 

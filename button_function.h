@@ -25,6 +25,7 @@
 #define EXIT_BUTTON_PUSHED ((flags_b.enter==notPUSHED) && (flags_b.up==PUSHED) && (flags_b.down==PUSHED))
 
 
+
 struct FLAGS_B
 {
     uint8_t enter:1;
@@ -54,4 +55,5 @@ void main_menu_button_manager_func(void);
 void cable_select_button_manager_func(void);
 void cable_define_button_manager_func(void);
 void about_me_button_manager_func(void);
+void run_test_button_manager_func(void);
 #endif

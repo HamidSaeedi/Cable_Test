@@ -61,7 +61,7 @@ switch (page)
         break;
     case RUN_TEST_PAGE:
         Menu_Run_Test();
-        //run_test_button_manager_func();
+        run_test_button_manager_func();
         break;
     case CABLE_SELSECT_PAGE:
         Menu_Cable_Select();
@@ -158,7 +158,7 @@ OCR0=0x00;
 // Timer(s)/Counter(s) Interrupt(s) initialization
 TIMSK=(0<<OCIE2) | (0<<TOIE2) | (0<<TICIE1) | (0<<OCIE1A) | (0<<OCIE1B) | (0<<TOIE1) | (0<<OCIE0) | (1<<TOIE0);
 DDRB.0=1;
-lcd_init(16);
+lcd_init(20);
 // Global enable interrupts
 #asm("sei")                                           
 while (1)
