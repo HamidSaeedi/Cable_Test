@@ -31,6 +31,7 @@ void main_menu_button_manager_func(void)
         default:
             break;
         }
+        lcd_clear();
     }
     else if(UP_BUTTON_PUSHED==1)
     {
@@ -49,7 +50,7 @@ void main_menu_button_manager_func(void)
     {
         flags_b.down=0;
         Menue_Main_Select_Num++;
-        if(Menue_Main_Select_Num>=NUM_ROW)
+        if(Menue_Main_Select_Num>=NUM_ROW || Menue_Main_Select_Num>=MAX_MAIN_MENU_ITEM)
         {
           Menue_Main_Num=Menue_Main_Num+NUM_ROW;
           Menue_Main_Select_Num=0;  
@@ -73,6 +74,8 @@ void cable_select_button_manager_func(void)
     {
         flags_b.enter=0;
         page=MAIN_PAGE;
+        lcd_clear();
+        //temp = Menue_Cable_Select_Num; 
     }
     else if(UP_BUTTON_PUSHED==1)
     {

@@ -1,6 +1,7 @@
 #include "Menu_Functions.h"
 #include "cable.h"
-char Menue_Main_Srting[4][NUM_COLUMN+1]={"Test Run" , "Cable Select" , "Cable define" , "About Me"};
+//char Menue_Main_Srting[4][NUM_COLUMN+1]={"Test Run" , "Cable Select" , "Cable define" , "About Me"};
+char Menue_Main_Srting[4][NUM_COLUMN+1]={"Test Run" , "Cable Select"  , "About Me"};
 char Menue_Main_Arrow_String[2][3]={"  ","->"};
 char lcd_buffer[NUM_COLUMN];
 int8_t Menue_Main_Num=0;
@@ -15,13 +16,13 @@ uint8_t Menu_Cable_Define_Index_Out=0;
 uint8_t Menu_Cable_Define_Index_In_Num=0;
 uint8_t Menu_Cable_Define_Index_Out_Num=0;
 struct FLAGS_MENU flags_menu;
-uint8_t page=RUN_TEST_PAGE;
+uint8_t page=MAIN_PAGE;
 
 void Menu_Main (void)
 {
 	int byteWrite=0;
 	uint8_t i=0; //just a simple loop counter.
-	for(i=0;i<NUM_ROW;i++)
+	for(i=0;(i<NUM_ROW) && (i<MAX_MAIN_MENU_ITEM);i++)
 	{
 		lcd_gotoxy(0,i);
 		memset(lcd_buffer,' ',sizeof(lcd_buffer));
@@ -104,7 +105,7 @@ int8_t Menu_Run_Test(void)
 	{
 		lcd_gotoxy(0,1);
 		memset(lcd_buffer,' ',sizeof(lcd_buffer));
-		sprintf(lcd_buffer,"     PASS!     ");
+		sprintf(lcd_buffer," cable%02d PASS!   ", Menue_Cable_Select_Num+Menue_Cable_Select_Select_Num);
 		lcd_puts(lcd_buffer);
 		cable_func_handle.pass_pins=0;
 	}
@@ -112,7 +113,7 @@ int8_t Menu_Run_Test(void)
 	{
 		lcd_gotoxy(0,1);
 		memset(lcd_buffer,' ',sizeof(lcd_buffer));
-		sprintf(lcd_buffer,"    Failed!    ");
+		sprintf(lcd_buffer,"cable%02d Failed!", Menue_Cable_Select_Num+Menue_Cable_Select_Select_Num);
 		lcd_puts(lcd_buffer);
 		cable_func_handle.pass_pins=0;
 	}

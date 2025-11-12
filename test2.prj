@@ -26,47 +26,47 @@ Active0=0
 EditorPanel0=0
 PageIndex0=0
 EditorPanel1=0
-TimeStamp1=1530031773
+TimeStamp1=1530503713
 PageIndex1=1
 TimeStamp0=1526956480
 OF2=cable.c
 Active2=0
 EditorPanel2=0
-TimeStamp2=1530032221
+TimeStamp2=1530033608
 PageIndex2=2
 OF3=Menu_Functions.h
 Active3=0
 EditorPanel3=0
-TimeStamp3=1530031268
+TimeStamp3=1530503618
 PageIndex3=3
 F1=test2.c
 F2=Menu_Functions.c
 F3=cable.c
 F4=button_function.c
 OF4=test2.c
-Active4=1
+Active4=0
 EditorPanel4=0
-TimeStamp4=1530033609
+TimeStamp4=1530500523
 PageIndex4=4
 OF5=button_function.h
 Active5=0
 EditorPanel5=0
-TimeStamp5=1529961175
+TimeStamp5=1530499857
 PageIndex5=5
 OF6=button_function.c
-Active6=0
+Active6=1
 EditorPanel6=0
-TimeStamp6=1529963107
+TimeStamp6=1533838794
 PageIndex6=6
 OF7=Debug\List\test2.asm
 Active7=0
 EditorPanel7=0
-TimeStamp7=1530029240
+TimeStamp7=1530503811
 PageIndex7=7
 OF8=cable.h
 Active8=0
 EditorPanel8=0
-TimeStamp8=1530032239
+TimeStamp8=1530033609
 PageIndex8=8
 [CompilerDebug]
 Chip=ATmega16A
@@ -166,8 +166,8 @@ WatchAVR8LAutoVariables=0
 UseEEPROMLocation0=1
 RebuildAll=0
 LinkageInformationPresent=1
-COFFileTimeStamp=1530503667
-Build=145
+COFFileTimeStamp=1533842576
+Build=160
 [DefinedSymbolsDebug]
 Count=0
 [Compiler]
@@ -269,7 +269,7 @@ UseEEPROMLocation0=1
 RebuildAll=1
 LinkageInformationPresent=0
 COFFileTimeStamp=-1
-Build=145
+Build=160
 IncludePath0=
 IncludePath1=
 IncludePath2=
@@ -520,8 +520,8 @@ L13=Enhanced function parameters passing: Yes
 L14=Automatic register allocation: Yes
 L15=Smart register allocation: Yes
 L16=
-L17=Build: 145
-L18=19777 line(s) compiled
+L17=Build: 159
+L18=19841 line(s) compiled
 L19=No errors
 L20=5 warning(s)
 L21=
@@ -541,19 +541,19 @@ L34=Heap size: 0 byte(s)
 L35=
 Lines=38
 L36=EEPROM usage: 0 byte(s), 0.0% of EEPROM
-L37=Program size: 2426 words (4852 bytes), 29.6% of FLASH
-L38=247 words (494 bytes), 9.2% reduced by Code Compression
+L37=Program size: 2446 words (4892 bytes), 29.9% of FLASH
+L38=256 words (512 bytes), 9.5% reduced by Code Compression
 [BuildInfoAssembler]
 Lines=12
 L1=AVRASM: AVR macro assembler 2.1.30 (build 592 Nov  7 2008 12:38:17)
 L2=Copyright (C) 1995-2008 ATMEL Corporation
 L3=
-L4=C:\Users\Asus\Desktop\cable_tester\test2\Debug\List\test2.asm(4378): No EEPROM data, deleting C:\Users\Asus\Desktop\cable_tester\test2\Debug\Exe\test2.eep
+L4=C:\Users\Asus\Desktop\cable_tester\test2\Debug\List\test2.asm(4405): No EEPROM data, deleting C:\Users\Asus\Desktop\cable_tester\test2\Debug\Exe\test2.eep
 L5=
 L6=ATmega16A memory use summary [bytes]:
 L7=Segment   Begin    End      Code   Data   Used    Size   Use%
 L8=---------------------------------------------------------------
-L9=[.cseg] 0x000000 0x0012f4   4522    330   4852   16384  29.6%
+L9=[.cseg] 0x000000 0x00131c   4570    322   4892   16384  29.9%
 L10=[.dseg] 0x000060 0x0002cd      0    365    365    1024  35.6%
 L11=[.eseg] 0x000000 0x000000      0      0      0     512   0.0%
 L12=
@@ -577,7 +577,7 @@ F8=Debug\List\test2.asm
 [Bookmarks1]
 TimeStamp=1530033609
 Row=44
-Column=24
+Column=0
 ScrollPosX=0
 ScrollPosY=34
 BK0=-1
@@ -595,13 +595,13 @@ Row=0
 Column=0
 ScrollPosX=0
 ScrollPosY=0
-TimeStamp=1530033692
+TimeStamp=1533843224
 [Bookmarks2]
-TimeStamp=1530033609
-Row=0
+TimeStamp=1530500523
+Row=13
 Column=0
 ScrollPosX=0
-ScrollPosY=0
+ScrollPosY=1
 BK0=-1
 BK1=-1
 BK2=-1
@@ -613,11 +613,11 @@ BK7=-1
 BK8=-1
 BK9=-1
 [Bookmarks3]
-TimeStamp=1530033607
-Row=0
-Column=0
+TimeStamp=1533842567
+Row=41
+Column=30
 ScrollPosX=0
-ScrollPosY=0
+ScrollPosY=30
 BK0=-1
 BK1=-1
 BK2=-1
@@ -645,11 +645,11 @@ BK7=-1
 BK8=-1
 BK9=-1
 [Bookmarks5]
-TimeStamp=1530029145
-Row=42
+TimeStamp=1533838794
+Row=0
 Column=0
 ScrollPosX=0
-ScrollPosY=39
+ScrollPosY=0
 BK0=-1
 BK1=-1
 BK2=-1
@@ -661,7 +661,7 @@ BK7=-1
 BK8=-1
 BK9=-1
 [Bookmarks6]
-TimeStamp=1529961175
+TimeStamp=1530499857
 Row=0
 Column=0
 ScrollPosX=0
@@ -677,7 +677,7 @@ BK7=-1
 BK8=-1
 BK9=-1
 [Bookmarks7]
-TimeStamp=1530033609
+TimeStamp=1533838868
 Row=0
 Column=0
 ScrollPosX=0
@@ -693,7 +693,7 @@ BK7=-1
 BK8=-1
 BK9=-1
 [Bookmarks8]
-TimeStamp=1530033591
+TimeStamp=1533842575
 Row=0
 Column=0
 ScrollPosX=0
@@ -708,22 +708,6 @@ BK6=-1
 BK7=-1
 BK8=-1
 BK9=-1
-[FoldedCode2]
-Blocks=0
-[FoldedCode3]
-Blocks=0
-[FoldedCode4]
-Blocks=0
-[FoldedCode5]
-Blocks=0
-[FoldedCode1]
-Blocks=0
-[FoldedCode8]
-Blocks=0
-[FoldedCode6]
-Blocks=0
-[FoldedCode7]
-Blocks=0
 [HeadersList]
 Files=4
 F1=C:\Users\Asus\Desktop\cable_tester\test2\test2.c
@@ -783,3 +767,19 @@ F9=C:\cvavr\inc\string.h
 F10=C:\cvavr\inc\alcd.h
 F11=cable.h
 F12=C:\cvavr\inc\stdlib.h
+[FoldedCode2]
+Blocks=0
+[FoldedCode3]
+Blocks=0
+[FoldedCode4]
+Blocks=0
+[FoldedCode5]
+Blocks=0
+[FoldedCode1]
+Blocks=0
+[FoldedCode8]
+Blocks=0
+[FoldedCode6]
+Blocks=0
+[FoldedCode7]
+Blocks=0

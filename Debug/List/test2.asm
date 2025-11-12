@@ -1134,38 +1134,39 @@ _0x6:
 	.DB  LOW(_Delay),HIGH(_Delay)
 _0x20003:
 	.DB  0x54,0x65,0x73,0x74,0x20,0x52,0x75,0x6E
-	.DB  0x20,0x20,0x20,0x20,0x20,0x20,0x0,0x0
-	.DB  0x43,0x61,0x62,0x6C,0x65,0x20,0x53,0x65
-	.DB  0x6C,0x65,0x63,0x74,0x20,0x20,0x20,0x0
-	.DB  0x43,0x61,0x62,0x6C,0x65,0x20,0x64,0x65
-	.DB  0x66,0x69,0x6E,0x65,0x20,0x20,0x20,0x0
-	.DB  0x41,0x62,0x6F,0x75,0x74,0x20,0x4D,0x65
-	.DB  0x20,0x20,0x20,0x20,0x20,0x20,0x20
+	.DB  0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0
+	.DB  0x0,0x0,0x0,0x0,0x0,0x43,0x61,0x62
+	.DB  0x6C,0x65,0x20,0x53,0x65,0x6C,0x65,0x63
+	.DB  0x74,0x0,0x0,0x0,0x0,0x0,0x0,0x0
+	.DB  0x0,0x0,0x41,0x62,0x6F,0x75,0x74,0x20
+	.DB  0x4D,0x65
+_0x20004:
+	.DB  0x20,0x20,0x0,0x2D,0x3E
+_0x20005:
+	.DB  0x4
 _0x20000:
-	.DB  0x2D,0x3E,0x25,0x73,0x0,0x2D,0x3E,0x20
-	.DB  0x63,0x61,0x62,0x6C,0x65,0x25,0x30,0x32
-	.DB  0x64,0x20,0x20,0x20,0x20,0x20,0x0,0x20
-	.DB  0x20,0x20,0x63,0x61,0x62,0x6C,0x65,0x25
-	.DB  0x30,0x32,0x64,0x20,0x20,0x20,0x20,0x0
-	.DB  0x2D,0x2D,0x3E,0x20,0x25,0x73,0x0,0x20
-	.DB  0x20,0x20,0x20,0x20,0x50,0x41,0x53,0x53
-	.DB  0x21,0x20,0x20,0x20,0x20,0x20,0x0,0x20
-	.DB  0x20,0x20,0x20,0x46,0x61,0x69,0x6C,0x65
-	.DB  0x64,0x21,0x20,0x20,0x20,0x20,0x0,0x25
-	.DB  0x30,0x32,0x64,0x2D,0x3E,0x25,0x30,0x32
-	.DB  0x64,0x20,0x20,0x20,0x50,0x72,0x6F,0x66
-	.DB  0x3D,0x25,0x30,0x32,0x64,0x0,0x20,0x5E
+	.DB  0x25,0x73,0x25,0x73,0x0,0x25,0x73,0x43
+	.DB  0x61,0x62,0x6C,0x65,0x25,0x30,0x32,0x64
+	.DB  0x0,0x2D,0x2D,0x3E,0x20,0x25,0x73,0x0
+	.DB  0x20,0x63,0x61,0x62,0x6C,0x65,0x25,0x30
+	.DB  0x32,0x64,0x20,0x50,0x41,0x53,0x53,0x21
+	.DB  0x20,0x20,0x20,0x0,0x63,0x61,0x62,0x6C
+	.DB  0x65,0x25,0x30,0x32,0x64,0x20,0x46,0x61
+	.DB  0x69,0x6C,0x65,0x64,0x21,0x0,0x25,0x30
+	.DB  0x32,0x64,0x2D,0x3E,0x25,0x30,0x32,0x64
+	.DB  0x20,0x20,0x20,0x50,0x72,0x6F,0x66,0x3D
+	.DB  0x25,0x30,0x32,0x64,0x0,0x20,0x5E,0x20
 	.DB  0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20
-	.DB  0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x0
-	.DB  0x20,0x20,0x20,0x20,0x20,0x5E,0x20,0x20
+	.DB  0x20,0x20,0x20,0x20,0x20,0x20,0x0,0x20
+	.DB  0x20,0x20,0x20,0x20,0x5E,0x20,0x20,0x20
 	.DB  0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20
-	.DB  0x20,0x0,0x20,0x20,0x20,0x20,0x20,0x20
+	.DB  0x0,0x20,0x20,0x20,0x20,0x20,0x20,0x20
 	.DB  0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20
-	.DB  0x20,0x5E,0x0,0x20,0x43,0x61,0x62,0x6C
-	.DB  0x65,0x20,0x54,0x65,0x73,0x74,0x20,0x56
-	.DB  0x25,0x30,0x32,0x64,0x20,0x0,0x20,0x20
-	.DB  0x20,0x20,0x20,0x20,0x4E,0x53,0x43,0x20
-	.DB  0x20,0x20,0x20,0x20,0x20,0x0
+	.DB  0x5E,0x0,0x20,0x43,0x61,0x62,0x6C,0x65
+	.DB  0x20,0x54,0x65,0x73,0x74,0x20,0x56,0x25
+	.DB  0x30,0x32,0x64,0x20,0x0,0x20,0x20,0x20
+	.DB  0x20,0x20,0x20,0x4E,0x53,0x43,0x20,0x20
+	.DB  0x20,0x20,0x20,0x20,0x0
 _0x2020060:
 	.DB  0x1
 _0x2020000:
@@ -1187,9 +1188,17 @@ __GLOBAL_INI_TBL:
 	.DW  _Read_Pin
 	.DW  _0x5*2
 
-	.DW  0x3F
+	.DW  0x32
 	.DW  _Menue_Main_Srting
 	.DW  _0x20003*2
+
+	.DW  0x05
+	.DW  _Menue_Main_Arrow_String
+	.DW  _0x20004*2
+
+	.DW  0x01
+	.DW  _page
+	.DW  _0x20005*2
 
 	.DW  0x01
 	.DW  __seed_G101
@@ -1412,7 +1421,8 @@ _0xD:
 	BRNE _0xE
 ; 0000 003F         Menu_Run_Test();
 	RCALL _Menu_Run_Test
-; 0000 0040         //run_test_button_manager_func();
+; 0000 0040         run_test_button_manager_func();
+	CALL _run_test_button_manager_func
 ; 0000 0041         break;
 	RJMP _0xC
 ; 0000 0042     case CABLE_SELSECT_PAGE:
@@ -1429,8 +1439,8 @@ _0xE:
 	RJMP _0xC
 ; 0000 0046      case CABLE_DEFINE_PAGE:
 _0xF:
-	CPI  R30,LOW(0x2)
-	LDI  R26,HIGH(0x2)
+	CPI  R30,LOW(0x3)
+	LDI  R26,HIGH(0x3)
 	CPC  R31,R26
 	BRNE _0x10
 ; 0000 0047         Menu_Cable_Define();
@@ -1441,8 +1451,8 @@ _0xF:
 	RJMP _0xC
 ; 0000 004A     case ABOUT_ME_PAGE:
 _0x10:
-	CPI  R30,LOW(0x3)
-	LDI  R26,HIGH(0x3)
+	CPI  R30,LOW(0x2)
+	LDI  R26,HIGH(0x2)
 	CPC  R31,R26
 	BRNE _0xC
 ; 0000 004B         Menu_About_Me();
@@ -1611,8 +1621,8 @@ _main:
 	OUT  0x39,R30
 ; 0000 00A0 DDRB.0=1;
 	SBI  0x17,0
-; 0000 00A1 lcd_init(16);
-	LDI  R26,LOW(16)
+; 0000 00A1 lcd_init(20);
+	LDI  R26,LOW(20)
 	CALL _lcd_init
 ; 0000 00A2 // Global enable interrupts
 ; 0000 00A3 #asm("sei")
@@ -1658,8 +1668,7 @@ _Delay:
 	CALL _delay_ms
 ; 0000 00B4 
 ; 0000 00B5 }
-	ADIW R28,4
-	RET
+	RJMP _0x20C0009
 ; .FEND
 ;
 ;uint8_t __read_PIN__(void){
@@ -1694,198 +1703,277 @@ ___read_PIN__:
 	.SET power_ctrl_reg=mcucr
 	#endif
 ;#include "cable.h"
-;char Menue_Main_Srting[4][16]={"Test Run      " , "Cable Select   " , "Cable define   " , "About Me       "};
+;//char Menue_Main_Srting[4][NUM_COLUMN+1]={"Test Run" , "Cable Select" , "Cable define" , "About Me"};
+;char Menue_Main_Srting[4][NUM_COLUMN+1]={"Test Run" , "Cable Select"  , "About Me"};
 
 	.DSEG
-;char lcd_buffer[16];
+;char Menue_Main_Arrow_String[2][3]={"  ","->"};
+;char lcd_buffer[NUM_COLUMN];
 ;int8_t Menue_Main_Num=0;
+;int8_t Menue_Main_Select_Num=0; //0 .. NUM_ROW
+;
 ;int8_t Menue_Cable_Select_Num=0;
+;int8_t Menue_Cable_Select_Select_Num=0;  //0 .. NUM_ROW
+;
 ;uint8_t Menu_Cable_Define_Prof=0;
 ;uint8_t Menu_Cable_Define_Index_In=0;
 ;uint8_t Menu_Cable_Define_Index_Out=0;
 ;uint8_t Menu_Cable_Define_Index_In_Num=0;
 ;uint8_t Menu_Cable_Define_Index_Out_Num=0;
 ;struct FLAGS_MENU flags_menu;
-;uint8_t page=RUN_TEST_PAGE;
-;int8_t Menu_Main (void)
-; 0001 000F {
+;uint8_t page=MAIN_PAGE;
+;
+;void Menu_Main (void)
+; 0001 0016 {
 
 	.CSEG
 _Menu_Main:
 ; .FSTART _Menu_Main
-; 0001 0010 	lcd_gotoxy(0,0);
+; 0001 0017 	int byteWrite=0;
+; 0001 0018 	uint8_t i=0; //just a simple loop counter.
+; 0001 0019 	for(i=0;(i<NUM_ROW) && (i<MAX_MAIN_MENU_ITEM);i++)
 	CALL SUBOPT_0x0
-; 0001 0011 	memset(lcd_buffer,0,sizeof(lcd_buffer));
+;	byteWrite -> R16,R17
+;	i -> R19
+_0x20007:
+	CPI  R19,4
+	BRSH _0x20009
+	CPI  R19,3
+	BRLO _0x2000A
+_0x20009:
+	RJMP _0x20008
+_0x2000A:
+; 0001 001A 	{
+; 0001 001B 		lcd_gotoxy(0,i);
 	CALL SUBOPT_0x1
-; 0001 0012 	snprintf(lcd_buffer, sizeof(lcd_buffer), "->%s", Menue_Main_Srting[Menue_Main_Num]);
+; 0001 001C 		memset(lcd_buffer,' ',sizeof(lcd_buffer));
+; 0001 001D 
+; 0001 001E 		byteWrite=snprintf(lcd_buffer, sizeof(lcd_buffer), "%s%s",Menue_Main_Arrow_String[(i==Menue_Main_Select_Num)] ,Menue_M ...
 	__POINTW1FN _0x20000,0
 	ST   -Y,R31
 	ST   -Y,R30
-	LDS  R30,_Menue_Main_Num
-	LDI  R31,0
+	MOV  R26,R19
+	CLR  R27
+	LDS  R30,_Menue_Main_Select_Num
 	CALL SUBOPT_0x2
-; 0001 0013 	//sprintf(lcd_buffer,"->%d",Menue_Main_Num);
-; 0001 0014 	lcd_puts(lcd_buffer);
-; 0001 0015 	lcd_gotoxy(0,1);
+	LDS  R26,_Menue_Main_Num
 	CALL SUBOPT_0x3
-; 0001 0016 	memset(lcd_buffer,0,sizeof(lcd_buffer));
-	CALL SUBOPT_0x1
-; 0001 0017 	snprintf(lcd_buffer, sizeof(lcd_buffer), "%s", Menue_Main_Srting[Menue_Main_Num+1]);
-	__POINTW1FN _0x20000,2
-	ST   -Y,R31
-	ST   -Y,R30
-	LDS  R30,_Menue_Main_Num
-	LDI  R31,0
-	SBRC R30,7
-	SER  R31
-	ADIW R30,1
-	CALL SUBOPT_0x2
-; 0001 0018 	//sprintf(lcd_buffer,"%d",Menue_Main_Num+1);
-; 0001 0019 	lcd_puts(lcd_buffer);
-; 0001 001A 	memset(lcd_buffer,0,sizeof(lcd_buffer));
+	LDI  R26,LOW(21)
+	LDI  R27,HIGH(21)
+	CALL __MULW12U
+	SUBI R30,LOW(-_Menue_Main_Srting)
+	SBCI R31,HIGH(-_Menue_Main_Srting)
+	CLR  R22
+	CLR  R23
 	CALL SUBOPT_0x4
-; 0001 001B 	if(flag.enter_button==1)
-	BRNE _0x20004
-; 0001 001C 	{
-; 0001 001D 		flag.enter_button=0;
-	LDS  R30,_flag
-	ANDI R30,0XF7
-	STS  _flag,R30
-; 0001 001E 		return Menue_Main_Num;
-	LDS  R30,_Menue_Main_Num
-	RET
-; 0001 001F 	}
-; 0001 0020 	return -1;
-_0x20004:
+; 0001 001F 		/*We just fill the remainnig part of the lcd_buffer with null to insure clean update
+; 0001 0020 		we did not use the lcd_clear becuse it cuse blinking in the lcd.
+; 0001 0021 		*/
+; 0001 0022 		// Fill remaining space with spaces
+; 0001 0023         if(byteWrite < NUM_COLUMN && byteWrite >= 0)
+	BRGE _0x2000C
+	TST  R17
+	BRPL _0x2000D
+_0x2000C:
+	RJMP _0x2000B
+_0x2000D:
+; 0001 0024 		{
+; 0001 0025            memset(lcd_buffer + byteWrite, ' ', NUM_COLUMN - byteWrite);
+	CALL SUBOPT_0x5
+; 0001 0026         }
+; 0001 0027 
+; 0001 0028         // Ensure null termination at LCD width
+; 0001 0029         lcd_buffer[NUM_COLUMN] = '\0';
+_0x2000B:
+	CALL SUBOPT_0x6
+; 0001 002A 	    lcd_puts(lcd_buffer);
+; 0001 002B 	}
+	SUBI R19,-1
+	RJMP _0x20007
+_0x20008:
+; 0001 002C 
+; 0001 002D }
 	RJMP _0x20C0008
-; 0001 0021 }
 ; .FEND
 ;
 ;int8_t  Menu_Cable_Select(void)
-; 0001 0024 {
+; 0001 0030 {
 _Menu_Cable_Select:
 ; .FSTART _Menu_Cable_Select
-; 0001 0025 	lcd_gotoxy(0,0);
+; 0001 0031 	int byteWrite=0;
+; 0001 0032 	uint8_t i=0; //just a simple loop counter.
+; 0001 0033 	for(i=0;i<NUM_ROW;i++)
 	CALL SUBOPT_0x0
-; 0001 0026 	sprintf(lcd_buffer,"-> cable%02d     ",Menue_Cable_Select_Num);
+;	byteWrite -> R16,R17
+;	i -> R19
+_0x2000F:
+	CPI  R19,4
+	BRSH _0x20010
+; 0001 0034 	{
+; 0001 0035 		lcd_gotoxy(0,i);
+	CALL SUBOPT_0x1
+; 0001 0036 		memset(lcd_buffer,' ',sizeof(lcd_buffer));
+; 0001 0037 
+; 0001 0038 		byteWrite=snprintf(lcd_buffer, sizeof(lcd_buffer), "%sCable%02d",Menue_Main_Arrow_String[(i==Menue_Cable_Select_Select ...
 	__POINTW1FN _0x20000,5
 	ST   -Y,R31
 	ST   -Y,R30
-	LDS  R30,_Menue_Cable_Select_Num
-	CALL __CBD1
-	CALL SUBOPT_0x5
-; 0001 0027 	lcd_puts(lcd_buffer);
-; 0001 0028 	lcd_gotoxy(0,1);
+	MOV  R26,R19
+	CLR  R27
+	LDS  R30,_Menue_Cable_Select_Select_Num
+	CALL SUBOPT_0x2
+	LDS  R26,_Menue_Cable_Select_Num
 	CALL SUBOPT_0x3
-; 0001 0029 	sprintf(lcd_buffer,"   cable%02d    ",Menue_Cable_Select_Num+1);
-	__POINTW1FN _0x20000,23
-	ST   -Y,R31
-	ST   -Y,R30
-	LDS  R30,_Menue_Cable_Select_Num
-	LDI  R31,0
-	SBRC R30,7
-	SER  R31
-	ADIW R30,1
 	CALL __CWD1
-	CALL SUBOPT_0x5
-; 0001 002A 	lcd_puts(lcd_buffer);
-; 0001 002B 	memset(lcd_buffer,0,sizeof(lcd_buffer));
 	CALL SUBOPT_0x4
-; 0001 002C 	if(flag.enter_button==1)
-	BRNE _0x20005
-; 0001 002D 	{
-; 0001 002E 		flag.enter_button=0;
+; 0001 0039 		/*We just fill the remainnig part of the lcd_buffer with null to insure clean update
+; 0001 003A 		we did not use the lcd_clear becuse it cuse blinking in the lcd.
+; 0001 003B 		*/
+; 0001 003C 		// Fill remaining space with spaces
+; 0001 003D         if(byteWrite < NUM_COLUMN && byteWrite >= 0)
+	BRGE _0x20012
+	TST  R17
+	BRPL _0x20013
+_0x20012:
+	RJMP _0x20011
+_0x20013:
+; 0001 003E 		{
+; 0001 003F            memset(lcd_buffer + byteWrite, ' ', NUM_COLUMN - byteWrite);
+	CALL SUBOPT_0x5
+; 0001 0040         }
+; 0001 0041 
+; 0001 0042         // Ensure null termination at LCD width
+; 0001 0043         lcd_buffer[NUM_COLUMN] = '\0';
+_0x20011:
+	CALL SUBOPT_0x6
+; 0001 0044 	    lcd_puts(lcd_buffer);
+; 0001 0045 	}
+	SUBI R19,-1
+	RJMP _0x2000F
+_0x20010:
+; 0001 0046 	/*
+; 0001 0047 	lcd_gotoxy(0,0);
+; 0001 0048 	sprintf(lcd_buffer,"-> cable%02d     ",Menue_Cable_Select_Num);
+; 0001 0049 	lcd_puts(lcd_buffer);
+; 0001 004A 	lcd_gotoxy(0,1);
+; 0001 004B 	sprintf(lcd_buffer,"   cable%02d    ",Menue_Cable_Select_Num+1);
+; 0001 004C 	lcd_puts(lcd_buffer);
+; 0001 004D 	memset(lcd_buffer,0,sizeof(lcd_buffer));
+; 0001 004E 	*/
+; 0001 004F 	if(flag.enter_button==1)
+	LDS  R30,_flag
+	ANDI R30,LOW(0x8)
+	CPI  R30,LOW(0x8)
+	BRNE _0x20014
+; 0001 0050 	{
+; 0001 0051 		flag.enter_button=0;
 	LDS  R30,_flag
 	ANDI R30,0XF7
 	STS  _flag,R30
-; 0001 002F 		cable_func_handle.cable_id=Menue_Cable_Select_Num;
-	LDS  R30,_Menue_Cable_Select_Num
+; 0001 0052 		cable_func_handle.cable_id=Menue_Cable_Select_Num+Menue_Cable_Select_Select_Num;
+	LDS  R30,_Menue_Cable_Select_Select_Num
+	LDS  R26,_Menue_Cable_Select_Num
+	ADD  R30,R26
 	__PUTB1MN _cable_func_handle,17
-; 0001 0030 		return Menue_Cable_Select_Num;
-	RET
-; 0001 0031 	}
-; 0001 0032 	return -1;
-_0x20005:
-_0x20C0008:
+; 0001 0053 		return Menue_Cable_Select_Num+Menue_Cable_Select_Select_Num;
+	LDS  R30,_Menue_Cable_Select_Select_Num
+	ADD  R30,R26
+	RJMP _0x20C0008
+; 0001 0054 	}
+; 0001 0055 	return -1;
+_0x20014:
 	LDI  R30,LOW(255)
+_0x20C0008:
+	CALL __LOADLOCR4
+_0x20C0009:
+	ADIW R28,4
 	RET
-; 0001 0033 }
+; 0001 0056 }
 ; .FEND
 ;
 ;int8_t Menu_Run_Test(void)
-; 0001 0036 {
+; 0001 0059 {
 _Menu_Run_Test:
 ; .FSTART _Menu_Run_Test
-; 0001 0037 	//Profile_ID();
-; 0001 0038 	if( cable_func_handle.error_other==MAXPROFILELIMIT)
+; 0001 005A 	//Profile_ID();
+; 0001 005B 	if( cable_func_handle.error_other==MAXPROFILELIMIT)
 	__GETB2MN _cable_func_handle,8
 	CPI  R26,LOW(0x9)
 	BREQ _0x20C0007
-; 0001 0039 	{
-; 0001 003A 		//print the error in here!
-; 0001 003B 		return 0;
-; 0001 003C 	}
-; 0001 003D 	else
-; 0001 003E 	{
-; 0001 003F 	Cable_Check();
+; 0001 005C 	{
+; 0001 005D 		//print the error in here!
+; 0001 005E 		return 0;
+; 0001 005F 	}
+; 0001 0060 	else
+; 0001 0061 	{
+; 0001 0062 	Cable_Check();
 	RCALL _Cable_Check
-; 0001 0040 	Cable_Error_Check();
+; 0001 0063 	Cable_Error_Check();
 	RCALL _Cable_Error_Check
-; 0001 0041 	lcd_gotoxy(0,0);
-	CALL SUBOPT_0x0
-; 0001 0042 	memset(lcd_buffer,' ',sizeof(lcd_buffer));
-	CALL SUBOPT_0x6
-; 0001 0043 	sprintf(lcd_buffer,"--> %s",cable_func_handle.error_symbol);
-	__POINTW1FN _0x20000,40
+; 0001 0064 	lcd_gotoxy(0,0);
+	CALL SUBOPT_0x7
+; 0001 0065 	memset(lcd_buffer,' ',sizeof(lcd_buffer));
+	CALL SUBOPT_0x8
+	CALL SUBOPT_0x9
+; 0001 0066 	sprintf(lcd_buffer,"--> %s",cable_func_handle.error_symbol);
+	__POINTW1FN _0x20000,17
 	ST   -Y,R31
 	ST   -Y,R30
 	__POINTW1MN _cable_func_handle,9
 	CLR  R22
 	CLR  R23
-	CALL SUBOPT_0x5
-; 0001 0044 	lcd_puts(lcd_buffer);
-; 0001 0045 	if(cable_func_handle.pass_pins==MAX_CABLE_PINS)
+	CALL SUBOPT_0xA
+; 0001 0067 	lcd_puts(lcd_buffer);
+; 0001 0068 	if(cable_func_handle.pass_pins==MAX_CABLE_PINS)
 	__GETB2MN _cable_func_handle,18
 	CPI  R26,LOW(0x8)
-	BRNE _0x20008
-; 0001 0046 	{
-; 0001 0047 		lcd_gotoxy(0,1);
-	CALL SUBOPT_0x3
-; 0001 0048 		memset(lcd_buffer,' ',sizeof(lcd_buffer));
-	CALL SUBOPT_0x6
-; 0001 0049 		sprintf(lcd_buffer,"     PASS!     ");
-	__POINTW1FN _0x20000,47
-	RJMP _0x20012
-; 0001 004A 		lcd_puts(lcd_buffer);
-; 0001 004B 		cable_func_handle.pass_pins=0;
-; 0001 004C 	}
-; 0001 004D 	else
-_0x20008:
-; 0001 004E 	{
-; 0001 004F 		lcd_gotoxy(0,1);
-	CALL SUBOPT_0x3
-; 0001 0050 		memset(lcd_buffer,' ',sizeof(lcd_buffer));
-	CALL SUBOPT_0x6
-; 0001 0051 		sprintf(lcd_buffer,"    Failed!    ");
-	__POINTW1FN _0x20000,63
-_0x20012:
+	BRNE _0x20017
+; 0001 0069 	{
+; 0001 006A 		lcd_gotoxy(0,1);
+	CALL SUBOPT_0xB
+; 0001 006B 		memset(lcd_buffer,' ',sizeof(lcd_buffer));
+	CALL SUBOPT_0x9
+; 0001 006C 		sprintf(lcd_buffer," cable%02d PASS!   ", Menue_Cable_Select_Num+Menue_Cable_Select_Select_Num);
+	__POINTW1FN _0x20000,24
+	RJMP _0x20021
+; 0001 006D 		lcd_puts(lcd_buffer);
+; 0001 006E 		cable_func_handle.pass_pins=0;
+; 0001 006F 	}
+; 0001 0070 	else
+_0x20017:
+; 0001 0071 	{
+; 0001 0072 		lcd_gotoxy(0,1);
+	CALL SUBOPT_0xB
+; 0001 0073 		memset(lcd_buffer,' ',sizeof(lcd_buffer));
+	CALL SUBOPT_0x9
+; 0001 0074 		sprintf(lcd_buffer,"cable%02d Failed!", Menue_Cable_Select_Num+Menue_Cable_Select_Select_Num);
+	__POINTW1FN _0x20000,44
+_0x20021:
 	ST   -Y,R31
 	ST   -Y,R30
-	CALL SUBOPT_0x7
-; 0001 0052 		lcd_puts(lcd_buffer);
-	LDI  R26,LOW(_lcd_buffer)
-	LDI  R27,HIGH(_lcd_buffer)
-	CALL _lcd_puts
-; 0001 0053 		cable_func_handle.pass_pins=0;
+	LDS  R26,_Menue_Cable_Select_Num
+	LDI  R27,0
+	SBRC R26,7
+	SER  R27
+	LDS  R30,_Menue_Cable_Select_Select_Num
+	LDI  R31,0
+	SBRC R30,7
+	SER  R31
+	ADD  R30,R26
+	ADC  R31,R27
+	CALL __CWD1
+	CALL SUBOPT_0xA
+; 0001 0075 		lcd_puts(lcd_buffer);
+; 0001 0076 		cable_func_handle.pass_pins=0;
 	LDI  R30,LOW(0)
 	__PUTB1MN _cable_func_handle,18
-; 0001 0054 	}
-; 0001 0055 	return 0;
+; 0001 0077 	}
+; 0001 0078 	return 0;
 _0x20C0007:
 	LDI  R30,LOW(0)
 	RET
-; 0001 0056 	}
-; 0001 0057 }
+; 0001 0079 	}
+; 0001 007A }
 	RET
 ; .FEND
 ;
@@ -1893,39 +1981,36 @@ _0x20C0007:
 ;
 ;
 ;void Menu_Cable_Define(void)
-; 0001 005D {
+; 0001 0080 {
 _Menu_Cable_Define:
 ; .FSTART _Menu_Cable_Define
-; 0001 005E 	lcd_gotoxy(0,0);
-	LDI  R30,LOW(0)
-	ST   -Y,R30
-	LDI  R26,LOW(0)
-	CALL _lcd_gotoxy
-; 0001 005F 	In_profile[Menu_Cable_Define_Prof][Menu_Cable_Define_Index_In]=Menu_Cable_Define_Index_In_Num;
-	CALL SUBOPT_0x8
-	CALL SUBOPT_0x9
+; 0001 0081 	lcd_gotoxy(0,0);
+	CALL SUBOPT_0x7
+; 0001 0082 	In_profile[Menu_Cable_Define_Prof][Menu_Cable_Define_Index_In]=Menu_Cable_Define_Index_In_Num;
+	CALL SUBOPT_0xC
+	CALL SUBOPT_0xD
 	ADD  R30,R26
 	ADC  R31,R27
 	LDS  R26,_Menu_Cable_Define_Index_In_Num
 	STD  Z+0,R26
-; 0001 0060 	Out_profile[Menu_Cable_Define_Prof][Menu_Cable_Define_Index_Out]=Menu_Cable_Define_Index_Out_Num;
-	CALL SUBOPT_0x8
-	CALL SUBOPT_0xA
+; 0001 0083 	Out_profile[Menu_Cable_Define_Prof][Menu_Cable_Define_Index_Out]=Menu_Cable_Define_Index_Out_Num;
+	CALL SUBOPT_0xC
+	CALL SUBOPT_0xE
 	ADD  R30,R26
 	ADC  R31,R27
 	LDS  R26,_Menu_Cable_Define_Index_Out_Num
 	STD  Z+0,R26
-; 0001 0061 	sprintf(lcd_buffer,"%02d->%02d   Prof=%02d",In_profile[Menu_Cable_Define_Prof][Menu_Cable_Define_Index_In],Out_profile[ ...
-	CALL SUBOPT_0xB
-	__POINTW1FN _0x20000,79
+; 0001 0084 	sprintf(lcd_buffer,"%02d->%02d   Prof=%02d",In_profile[Menu_Cable_Define_Prof][Menu_Cable_Define_Index_In],Out_profile[ ...
+	CALL SUBOPT_0x8
+	__POINTW1FN _0x20000,62
 	ST   -Y,R31
 	ST   -Y,R30
-	CALL SUBOPT_0x8
-	CALL SUBOPT_0x9
 	CALL SUBOPT_0xC
-	CALL SUBOPT_0x8
-	CALL SUBOPT_0xA
+	CALL SUBOPT_0xD
+	CALL SUBOPT_0xF
 	CALL SUBOPT_0xC
+	CALL SUBOPT_0xE
+	CALL SUBOPT_0xF
 	LDS  R30,_Menu_Cable_Define_Prof
 	CLR  R31
 	CLR  R22
@@ -1934,104 +2019,105 @@ _Menu_Cable_Define:
 	LDI  R24,12
 	CALL _sprintf
 	ADIW R28,16
-; 0001 0062 	lcd_puts(lcd_buffer);
+; 0001 0085 	lcd_puts(lcd_buffer);
 	LDI  R26,LOW(_lcd_buffer)
 	LDI  R27,HIGH(_lcd_buffer)
 	CALL _lcd_puts
-; 0001 0063 	memset(lcd_buffer,0,sizeof(lcd_buffer));
-	CALL SUBOPT_0xB
-	CALL SUBOPT_0xD
-; 0001 0064 	lcd_gotoxy(0,1);
+; 0001 0086 	memset(lcd_buffer,0,sizeof(lcd_buffer));
+	CALL SUBOPT_0x8
+	CALL SUBOPT_0x10
+; 0001 0087 	lcd_gotoxy(0,1);
 	LDI  R30,LOW(0)
 	ST   -Y,R30
 	LDI  R26,LOW(1)
 	CALL _lcd_gotoxy
-; 0001 0065 	switch (flags_menu.subpage)
+; 0001 0088 	switch (flags_menu.subpage)
 	LDS  R30,_flags_menu
 	LDI  R31,0
 	ANDI R30,LOW(0x7)
 	ANDI R31,HIGH(0x7)
 	SBRS R30,2
-	RJMP _0x2000D
+	RJMP _0x2001C
 	ORI  R30,LOW(0xFFF8)
 	ORI  R31,HIGH(0xFFF8)
-_0x2000D:
-; 0001 0066 	{
-; 0001 0067 	case IN_SELECT:
+_0x2001C:
+; 0001 0089 	{
+; 0001 008A 	case IN_SELECT:
 	CPI  R30,LOW(0x2)
 	LDI  R26,HIGH(0x2)
 	CPC  R31,R26
-	BRNE _0x2000E
-; 0001 0068 		sprintf(lcd_buffer," ^               ");
-	CALL SUBOPT_0xB
-	__POINTW1FN _0x20000,102
-	CALL SUBOPT_0xE
-; 0001 0069 		break;
-	RJMP _0x2000C
-; 0001 006A 	case OUT_SELECT:
-_0x2000E:
+	BRNE _0x2001D
+; 0001 008B 		sprintf(lcd_buffer," ^               ");
+	CALL SUBOPT_0x8
+	__POINTW1FN _0x20000,85
+	CALL SUBOPT_0x11
+; 0001 008C 		break;
+	RJMP _0x2001B
+; 0001 008D 	case OUT_SELECT:
+_0x2001D:
 	CPI  R30,LOW(0x3)
 	LDI  R26,HIGH(0x3)
 	CPC  R31,R26
-	BRNE _0x2000F
-; 0001 006B 		lcd_gotoxy(0,1);
-	CALL SUBOPT_0x3
-; 0001 006C 		sprintf(lcd_buffer,"     ^           ");
-	__POINTW1FN _0x20000,120
-	CALL SUBOPT_0xE
-; 0001 006D 	    break;
-	RJMP _0x2000C
-; 0001 006E 	case PROF_SELECT:
-_0x2000F:
+	BRNE _0x2001E
+; 0001 008E 		lcd_gotoxy(0,1);
+	CALL SUBOPT_0xB
+; 0001 008F 		sprintf(lcd_buffer,"     ^           ");
+	__POINTW1FN _0x20000,103
+	CALL SUBOPT_0x11
+; 0001 0090 	    break;
+	RJMP _0x2001B
+; 0001 0091 	case PROF_SELECT:
+_0x2001E:
 	CPI  R30,LOW(0x4)
 	LDI  R26,HIGH(0x4)
 	CPC  R31,R26
-	BRNE _0x20011
-; 0001 006F 		sprintf(lcd_buffer,"               ^");
-	CALL SUBOPT_0xB
-	__POINTW1FN _0x20000,138
-	CALL SUBOPT_0xE
-; 0001 0070 		break;
-; 0001 0071 	default:
-_0x20011:
-; 0001 0072 		break;
-; 0001 0073 	}
-_0x2000C:
-; 0001 0074 	lcd_puts(lcd_buffer);
+	BRNE _0x20020
+; 0001 0092 		sprintf(lcd_buffer,"               ^");
+	CALL SUBOPT_0x8
+	__POINTW1FN _0x20000,121
+	CALL SUBOPT_0x11
+; 0001 0093 		break;
+; 0001 0094 	default:
+_0x20020:
+; 0001 0095 		break;
+; 0001 0096 	}
+_0x2001B:
+; 0001 0097 	lcd_puts(lcd_buffer);
 	RJMP _0x20C0006
-; 0001 0075 
-; 0001 0076 
-; 0001 0077 	memset(lcd_buffer,0,sizeof(lcd_buffer));
-; 0001 0078 }
+; 0001 0098 
+; 0001 0099 
+; 0001 009A 	memset(lcd_buffer,0,sizeof(lcd_buffer));
+; 0001 009B }
 ; .FEND
 ;
 ;void Menu_About_Me(void)
-; 0001 007B {
+; 0001 009E {
 _Menu_About_Me:
 ; .FSTART _Menu_About_Me
-; 0001 007C 	lcd_gotoxy(0,0);
-	CALL SUBOPT_0x0
-; 0001 007D 	sprintf(lcd_buffer," Cable Test V%02d ",Version);
-	__POINTW1FN _0x20000,155
+; 0001 009F 	lcd_gotoxy(0,0);
+	CALL SUBOPT_0x7
+; 0001 00A0 	sprintf(lcd_buffer," Cable Test V%02d ",Version);
+	CALL SUBOPT_0x8
+	__POINTW1FN _0x20000,138
 	ST   -Y,R31
 	ST   -Y,R30
 	__GETD1N 0x1
-	CALL SUBOPT_0x5
-; 0001 007E 	lcd_puts(lcd_buffer);
-; 0001 007F 	lcd_gotoxy(0,1);
-	CALL SUBOPT_0x3
-; 0001 0080 	sprintf(lcd_buffer,"      NSC      ");
-	__POINTW1FN _0x20000,174
-	CALL SUBOPT_0xE
-; 0001 0081 	lcd_puts(lcd_buffer);
+	CALL SUBOPT_0xA
+; 0001 00A1 	lcd_puts(lcd_buffer);
+; 0001 00A2 	lcd_gotoxy(0,1);
+	CALL SUBOPT_0xB
+; 0001 00A3 	sprintf(lcd_buffer,"      NSC      ");
+	__POINTW1FN _0x20000,157
+	CALL SUBOPT_0x11
+; 0001 00A4 	lcd_puts(lcd_buffer);
 _0x20C0006:
 	LDI  R26,LOW(_lcd_buffer)
 	LDI  R27,HIGH(_lcd_buffer)
 	CALL _lcd_puts
-; 0001 0082 	memset(lcd_buffer,0,sizeof(lcd_buffer));
-	CALL SUBOPT_0xB
-	CALL SUBOPT_0xD
-; 0001 0083 }
+; 0001 00A5 	memset(lcd_buffer,0,sizeof(lcd_buffer));
+	CALL SUBOPT_0x8
+	CALL SUBOPT_0x10
+; 0001 00A6 }
 	RET
 ; .FEND
 ;
@@ -2096,17 +2182,17 @@ _Cable_Check:
 	LDI  R16,0
 	LDI  R30,LOW(_Input)
 	LDI  R31,HIGH(_Input)
-	CALL SUBOPT_0xF
+	CALL SUBOPT_0x12
 	SUBI R30,LOW(-_In_profile)
 	SBCI R31,HIGH(-_In_profile)
-	CALL SUBOPT_0x10
+	CALL SUBOPT_0x13
 ; 0002 0026     memcpy(Output,Out_profile[cable_func_handle.cable_id],MAX_CABLE_PINS);
 	LDI  R30,LOW(_Output)
 	LDI  R31,HIGH(_Output)
-	CALL SUBOPT_0xF
+	CALL SUBOPT_0x12
 	SUBI R30,LOW(-_Out_profile)
 	SBCI R31,HIGH(-_Out_profile)
-	CALL SUBOPT_0x10
+	CALL SUBOPT_0x13
 ; 0002 0027     for(i=0;i<sizeof(Output);i++)
 	LDI  R17,LOW(0)
 _0x40005:
@@ -2129,7 +2215,7 @@ _0x40008:
 ; 0002 002B         {
 ; 0002 002C             //(*sleep_ms)(1);
 ; 0002 002D             if((*Read_Pin)()==Input[j])
-	CALL SUBOPT_0x11
+	CALL SUBOPT_0x14
 	BRNE _0x4000A
 ; 0002 002E             {
 ; 0002 002F                 if(i!=j)
@@ -2145,7 +2231,7 @@ _0x40008:
 	SUBI R30,-LOW(2)
 	ST   X,R30
 ; 0002 0032                     flag.connect=1;
-	CALL SUBOPT_0x12
+	CALL SUBOPT_0x15
 ; 0002 0033                 }
 ; 0002 0034                 else if(i==j)
 	RJMP _0x4000C
@@ -2154,9 +2240,9 @@ _0x4000B:
 	BRNE _0x4000D
 ; 0002 0035                 {
 ; 0002 0036                     flag.connect=1;
-	CALL SUBOPT_0x12
+	CALL SUBOPT_0x15
 ; 0002 0037                     cable_func_handle.error_cable[i]=0;
-	CALL SUBOPT_0x13
+	CALL SUBOPT_0x16
 	LDI  R26,LOW(0)
 	STD  Z+0,R26
 ; 0002 0038                 }
@@ -2166,11 +2252,11 @@ _0x4000D:
 _0x4000C:
 ; 0002 003B             if((*Read_Pin)()>Input[j])
 _0x4000A:
-	CALL SUBOPT_0x11
+	CALL SUBOPT_0x14
 	BRSH _0x4000E
 ; 0002 003C             {
 ; 0002 003D                flag.connect=1;
-	CALL SUBOPT_0x12
+	CALL SUBOPT_0x15
 ; 0002 003E                cable_func_handle.error_cable[i]=3+i;
 	MOV  R26,R17
 	LDI  R27,0
@@ -2203,7 +2289,7 @@ _0x4000F:
 	BRNE _0x40011
 ; 0002 0046         {
 ; 0002 0047              cable_func_handle.error_cable[i]=1;
-	CALL SUBOPT_0x13
+	CALL SUBOPT_0x16
 	LDI  R26,LOW(1)
 	STD  Z+0,R26
 ; 0002 0048              flag.notconnect=1;
@@ -2240,7 +2326,7 @@ _0x40013:
 	BRSH _0x40014
 ; 0002 0052     {
 ; 0002 0053         if(cable_func_handle.error_cable[i]==i+3)
-	CALL SUBOPT_0x13
+	CALL SUBOPT_0x16
 	LD   R26,Z
 	MOV  R30,R17
 	LDI  R31,0
@@ -2251,13 +2337,13 @@ _0x40013:
 	BRNE _0x40015
 ; 0002 0054         {
 ; 0002 0055             cable_func_handle.error_symbol[i]=CONFLICT;
-	CALL SUBOPT_0x14
+	CALL SUBOPT_0x17
 	LDI  R30,LOW(67)
 	RJMP _0x4001D
 ; 0002 0056         }
 ; 0002 0057         else if(cable_func_handle.error_cable[i]==i+2)
 _0x40015:
-	CALL SUBOPT_0x13
+	CALL SUBOPT_0x16
 	LD   R26,Z
 	MOV  R30,R17
 	LDI  R31,0
@@ -2268,19 +2354,19 @@ _0x40015:
 	BRNE _0x40017
 ; 0002 0058         {
 ; 0002 0059              cable_func_handle.error_symbol[i]= WRONG;
-	CALL SUBOPT_0x14
+	CALL SUBOPT_0x17
 	LDI  R30,LOW(87)
 	RJMP _0x4001D
 ; 0002 005A         }
 ; 0002 005B         else if(cable_func_handle.error_cable[i]==0)
 _0x40017:
-	CALL SUBOPT_0x13
+	CALL SUBOPT_0x16
 	LD   R30,Z
 	CPI  R30,0
 	BRNE _0x40019
 ; 0002 005C         {
 ; 0002 005D              cable_func_handle.error_symbol[i]= GOOD;
-	CALL SUBOPT_0x14
+	CALL SUBOPT_0x17
 	LDI  R30,LOW(71)
 	ST   X,R30
 ; 0002 005E              cable_func_handle.pass_pins++;
@@ -2292,13 +2378,13 @@ _0x40017:
 ; 0002 0060         else if(cable_func_handle.error_cable[i]==1)
 	RJMP _0x4001A
 _0x40019:
-	CALL SUBOPT_0x13
+	CALL SUBOPT_0x16
 	LD   R26,Z
 	CPI  R26,LOW(0x1)
 	BRNE _0x4001B
 ; 0002 0061         {
 ; 0002 0062              cable_func_handle.error_symbol[i]= NOCONNECT;
-	CALL SUBOPT_0x14
+	CALL SUBOPT_0x17
 	LDI  R30,LOW(78)
 _0x4001D:
 	ST   X,R30
@@ -2358,8 +2444,17 @@ _0x40014:
 	.CSEG
 _main_menu_button_manager_func:
 ; .FSTART _main_menu_button_manager_func
-; 0003 000C     if(ENTER_BUTTON_PUSHED==1)
-	CALL SUBOPT_0x15
+; 0003 000C     int8_t Menu_Item=-1;
+; 0003 000D     Menu_Item =  Menue_Main_Select_Num+Menue_Main_Num;
+	ST   -Y,R17
+;	Menu_Item -> R17
+	LDI  R17,255
+	LDS  R30,_Menue_Main_Num
+	LDS  R26,_Menue_Main_Select_Num
+	ADD  R30,R26
+	MOV  R17,R30
+; 0003 000E     if(ENTER_BUTTON_PUSHED==1)
+	CALL SUBOPT_0x18
 	BRNE _0x60004
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x2)
@@ -2374,68 +2469,70 @@ _0x60004:
 _0x60005:
 	CPI  R30,LOW(0x1)
 	BRNE _0x60003
-; 0003 000D     {
-; 0003 000E         flags_b.enter=0;
-	CALL SUBOPT_0x16
-; 0003 000F         switch (Menue_Cable_Select_Num)
-	LDS  R30,_Menue_Cable_Select_Num
+; 0003 000F     {
+; 0003 0010         flags_b.enter=0;
+	CALL SUBOPT_0x19
+; 0003 0011         switch (Menu_Item)
+	MOV  R30,R17
 	LDI  R31,0
 	SBRC R30,7
 	SER  R31
-; 0003 0010         {
-; 0003 0011         case RUN_TEST_PAGE:
+; 0003 0012         {
+; 0003 0013         case RUN_TEST_PAGE:
 	SBIW R30,0
 	BRNE _0x60009
-; 0003 0012             page=RUN_TEST_PAGE;
+; 0003 0014             page=RUN_TEST_PAGE;
 	LDI  R30,LOW(0)
 	STS  _page,R30
-; 0003 0013             break;
+; 0003 0015             break;
 	RJMP _0x60008
-; 0003 0014         case CABLE_SELSECT_PAGE:
+; 0003 0016         case CABLE_SELSECT_PAGE:
 _0x60009:
 	CPI  R30,LOW(0x1)
 	LDI  R26,HIGH(0x1)
 	CPC  R31,R26
 	BRNE _0x6000A
-; 0003 0015             page=CABLE_SELSECT_PAGE;
+; 0003 0017             page=CABLE_SELSECT_PAGE;
 	LDI  R30,LOW(1)
 	STS  _page,R30
-; 0003 0016             break;
+; 0003 0018             break;
 	RJMP _0x60008
-; 0003 0017         case CABLE_DEFINE_PAGE:
+; 0003 0019         case CABLE_DEFINE_PAGE:
 _0x6000A:
-	CPI  R30,LOW(0x2)
-	LDI  R26,HIGH(0x2)
-	CPC  R31,R26
-	BRNE _0x6000B
-; 0003 0018             page=CABLE_DEFINE_PAGE;
-	LDI  R30,LOW(2)
-	STS  _page,R30
-; 0003 0019             break;
-	RJMP _0x60008
-; 0003 001A         case ABOUT_ME_PAGE:
-_0x6000B:
 	CPI  R30,LOW(0x3)
 	LDI  R26,HIGH(0x3)
 	CPC  R31,R26
-	BRNE _0x6000D
-; 0003 001B             page=ABOUT_ME_PAGE;
+	BRNE _0x6000B
+; 0003 001A             page=CABLE_DEFINE_PAGE;
 	LDI  R30,LOW(3)
 	STS  _page,R30
-; 0003 001C             break;
-; 0003 001D         default:
-_0x6000D:
+; 0003 001B             break;
+	RJMP _0x60008
+; 0003 001C         case ABOUT_ME_PAGE:
+_0x6000B:
+	CPI  R30,LOW(0x2)
+	LDI  R26,HIGH(0x2)
+	CPC  R31,R26
+	BRNE _0x6000D
+; 0003 001D             page=ABOUT_ME_PAGE;
+	LDI  R30,LOW(2)
+	STS  _page,R30
 ; 0003 001E             break;
-; 0003 001F         }
+; 0003 001F         default:
+_0x6000D:
+; 0003 0020             break;
+; 0003 0021         }
 _0x60008:
-; 0003 0020     }
-; 0003 0021     else if(UP_BUTTON_PUSHED==1)
+; 0003 0022         lcd_clear();
+	CALL _lcd_clear
+; 0003 0023     }
+; 0003 0024     else if(UP_BUTTON_PUSHED==1)
 	RJMP _0x6000E
 _0x60003:
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x1)
 	BRNE _0x60010
-	CALL SUBOPT_0x17
+	CALL SUBOPT_0x1A
 	BRNE _0x60010
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x4)
@@ -2447,98 +2544,104 @@ _0x60010:
 _0x60011:
 	CPI  R30,LOW(0x1)
 	BRNE _0x6000F
-; 0003 0022     {
-; 0003 0023         flags_b.up=0;
-	CALL SUBOPT_0x18
-; 0003 0024         Menue_Main_Num++;
+; 0003 0025     {
+; 0003 0026         flags_b.up=0;
+	CALL SUBOPT_0x1B
+; 0003 0027         Menue_Main_Select_Num--; //0 or 1
+	LDS  R30,_Menue_Main_Select_Num
+	SUBI R30,LOW(1)
+	STS  _Menue_Main_Select_Num,R30
+; 0003 0028         if(Menue_Main_Select_Num<0)
+	LDS  R26,_Menue_Main_Select_Num
+	CPI  R26,0
+	BRGE _0x60012
+; 0003 0029         {
+; 0003 002A            Menue_Main_Num=Menue_Main_Num-NUM_ROW;
 	LDS  R30,_Menue_Main_Num
-	SUBI R30,-LOW(1)
+	SUBI R30,LOW(4)
 	STS  _Menue_Main_Num,R30
-; 0003 0025         if(Menue_Main_Num>=(MAX_MAIN_MENU_ITEM-1))
+; 0003 002B            Menue_Main_Select_Num=NUM_ROW-1;
+	LDI  R30,LOW(3)
+	STS  _Menue_Main_Select_Num,R30
+; 0003 002C            if(Menue_Main_Num<0)
 	LDS  R26,_Menue_Main_Num
-	CPI  R26,LOW(0x3)
-	BRLT _0x60012
-; 0003 0026             Menue_Main_Num=0;
-	LDI  R30,LOW(0)
+	CPI  R26,0
+	BRGE _0x60013
+; 0003 002D               Menue_Main_Num=MAX_MAIN_MENU_ITEM-NUM_ROW;
+	LDI  R30,LOW(255)
 	STS  _Menue_Main_Num,R30
-; 0003 0027     }
+; 0003 002E         }
+_0x60013:
+; 0003 002F 
+; 0003 0030     }
 _0x60012:
-; 0003 0028     else if(DOWN_BUTTON_PUSHED==1)
-	RJMP _0x60013
+; 0003 0031     else if(DOWN_BUTTON_PUSHED==1)
+	RJMP _0x60014
 _0x6000F:
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x1)
-	BRNE _0x60015
+	BRNE _0x60016
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x2)
-	BRNE _0x60015
-	CALL SUBOPT_0x19
-	BRNE _0x60015
+	BRNE _0x60016
+	CALL SUBOPT_0x1C
+	BRNE _0x60016
 	LDI  R30,1
-	RJMP _0x60016
-_0x60015:
-	LDI  R30,0
+	RJMP _0x60017
 _0x60016:
-	CPI  R30,LOW(0x1)
-	BRNE _0x60014
-; 0003 0029     {
-; 0003 002A         flags_b.down=0;
-	CALL SUBOPT_0x1A
-; 0003 002B         Menue_Main_Num--;
-	LDS  R30,_Menue_Main_Num
-	SUBI R30,LOW(1)
-	STS  _Menue_Main_Num,R30
-; 0003 002C         if(Menue_Main_Num<0)
-	LDS  R26,_Menue_Main_Num
-	CPI  R26,0
-	BRGE _0x60017
-; 0003 002D             Menue_Main_Num=(MAX_MAIN_MENU_ITEM-1);
-	LDI  R30,LOW(3)
-	STS  _Menue_Main_Num,R30
-; 0003 002E     }
+	LDI  R30,0
 _0x60017:
-; 0003 002F 
-; 0003 0030 }
+	CPI  R30,LOW(0x1)
+	BRNE _0x60015
+; 0003 0032     {
+; 0003 0033         flags_b.down=0;
+	CALL SUBOPT_0x1D
+; 0003 0034         Menue_Main_Select_Num++;
+	LDS  R30,_Menue_Main_Select_Num
+	SUBI R30,-LOW(1)
+	STS  _Menue_Main_Select_Num,R30
+; 0003 0035         if(Menue_Main_Select_Num>=NUM_ROW || Menue_Main_Select_Num>=MAX_MAIN_MENU_ITEM)
+	LDS  R26,_Menue_Main_Select_Num
+	CPI  R26,LOW(0x4)
+	BRGE _0x60019
+	CPI  R26,LOW(0x3)
+	BRLT _0x60018
+_0x60019:
+; 0003 0036         {
+; 0003 0037           Menue_Main_Num=Menue_Main_Num+NUM_ROW;
+	LDS  R30,_Menue_Main_Num
+	SUBI R30,-LOW(4)
+	STS  _Menue_Main_Num,R30
+; 0003 0038           Menue_Main_Select_Num=0;
+	LDI  R30,LOW(0)
+	STS  _Menue_Main_Select_Num,R30
+; 0003 0039           if(Menue_Main_Num>=(MAX_MAIN_MENU_ITEM-1))
+	LDS  R26,_Menue_Main_Num
+	CPI  R26,LOW(0x2)
+	BRLT _0x6001B
+; 0003 003A              Menue_Main_Num=0;
+	STS  _Menue_Main_Num,R30
+; 0003 003B         }
+_0x6001B:
+; 0003 003C     }
+_0x60018:
+; 0003 003D 
+; 0003 003E }
+_0x60015:
 _0x60014:
-_0x60013:
 _0x6000E:
+	LD   R17,Y+
 	RET
 ; .FEND
-;
-;void cable_select_button_manager_func(void)
-; 0003 0033 {
-_cable_select_button_manager_func:
-; .FSTART _cable_select_button_manager_func
-; 0003 0034     if(ENTER_BUTTON_PUSHED==1)
-	CALL SUBOPT_0x15
-	BRNE _0x60019
+;void run_test_button_manager_func(void)
+; 0003 0040 {
+_run_test_button_manager_func:
+; .FSTART _run_test_button_manager_func
+; 0003 0041     if(ENTER_BUTTON_PUSHED==1)
+	CALL SUBOPT_0x18
+	BRNE _0x6001D
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x2)
-	BRNE _0x60019
-	LDS  R30,_flags_b
-	ANDI R30,LOW(0x4)
-	BRNE _0x60019
-	LDI  R30,1
-	RJMP _0x6001A
-_0x60019:
-	LDI  R30,0
-_0x6001A:
-	CPI  R30,LOW(0x1)
-	BRNE _0x60018
-; 0003 0035     {
-; 0003 0036         flags_b.enter=0;
-	CALL SUBOPT_0x16
-; 0003 0037         page=MAIN_PAGE;
-	LDI  R30,LOW(4)
-	STS  _page,R30
-; 0003 0038     }
-; 0003 0039     else if(UP_BUTTON_PUSHED==1)
-	RJMP _0x6001B
-_0x60018:
-	LDS  R30,_flags_b
-	ANDI R30,LOW(0x1)
-	BRNE _0x6001D
-	CALL SUBOPT_0x17
 	BRNE _0x6001D
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x4)
@@ -2550,127 +2653,159 @@ _0x6001D:
 _0x6001E:
 	CPI  R30,LOW(0x1)
 	BRNE _0x6001C
-; 0003 003A     {
-; 0003 003B         flags_b.up=0;
-	CALL SUBOPT_0x18
-; 0003 003C         Menue_Cable_Select_Num++;
-	CALL SUBOPT_0x1B
-; 0003 003D         if(Menue_Cable_Select_Num>MAX_NUMBER_PROFILE)
-	BRLT _0x6001F
-; 0003 003E            Menue_Cable_Select_Num=0;
-	LDI  R30,LOW(0)
-	STS  _Menue_Cable_Select_Num,R30
-; 0003 003F     }
-_0x6001F:
-; 0003 0040     else if(DOWN_BUTTON_PUSHED==1)
-	RJMP _0x60020
+; 0003 0042     {
+; 0003 0043          flags_b.enter=0;
+	CALL SUBOPT_0x19
+; 0003 0044          page=MAIN_PAGE;
+	LDI  R30,LOW(4)
+	STS  _page,R30
+; 0003 0045     }
+; 0003 0046 }
 _0x6001C:
-	LDS  R30,_flags_b
-	ANDI R30,LOW(0x1)
-	BRNE _0x60022
+	RET
+; .FEND
+;void cable_select_button_manager_func(void)
+; 0003 0048 {
+_cable_select_button_manager_func:
+; .FSTART _cable_select_button_manager_func
+; 0003 0049     if(ENTER_BUTTON_PUSHED==1)
+	CALL SUBOPT_0x18
+	BRNE _0x60020
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x2)
-	BRNE _0x60022
-	CALL SUBOPT_0x19
-	BRNE _0x60022
+	BRNE _0x60020
+	LDS  R30,_flags_b
+	ANDI R30,LOW(0x4)
+	BRNE _0x60020
 	LDI  R30,1
-	RJMP _0x60023
-_0x60022:
-	LDI  R30,0
-_0x60023:
-	CPI  R30,LOW(0x1)
-	BRNE _0x60021
-; 0003 0041     {
-; 0003 0042         flags_b.down=0;
-	CALL SUBOPT_0x1A
-; 0003 0043         Menue_Cable_Select_Num--;
-	CALL SUBOPT_0x1C
-; 0003 0044         if(Menue_Cable_Select_Num<0)
-	BRGE _0x60024
-; 0003 0045             Menue_Cable_Select_Num=MAX_NUMBER_PROFILE;
-	LDI  R30,LOW(12)
-	STS  _Menue_Cable_Select_Num,R30
-; 0003 0046     }
-_0x60024:
-; 0003 0047 }
-_0x60021:
+	RJMP _0x60021
 _0x60020:
-_0x6001B:
+	LDI  R30,0
+_0x60021:
+	CPI  R30,LOW(0x1)
+	BRNE _0x6001F
+; 0003 004A     {
+; 0003 004B         flags_b.enter=0;
+	CALL SUBOPT_0x19
+; 0003 004C         page=MAIN_PAGE;
+	LDI  R30,LOW(4)
+	STS  _page,R30
+; 0003 004D         lcd_clear();
+	CALL _lcd_clear
+; 0003 004E         //temp = Menue_Cable_Select_Num;
+; 0003 004F     }
+; 0003 0050     else if(UP_BUTTON_PUSHED==1)
+	RJMP _0x60022
+_0x6001F:
+	LDS  R30,_flags_b
+	ANDI R30,LOW(0x1)
+	BRNE _0x60024
+	CALL SUBOPT_0x1A
+	BRNE _0x60024
+	LDS  R30,_flags_b
+	ANDI R30,LOW(0x4)
+	BRNE _0x60024
+	LDI  R30,1
+	RJMP _0x60025
+_0x60024:
+	LDI  R30,0
+_0x60025:
+	CPI  R30,LOW(0x1)
+	BRNE _0x60023
+; 0003 0051     {
+; 0003 0052         flags_b.up=0;
+	CALL SUBOPT_0x1B
+; 0003 0053         Menue_Cable_Select_Select_Num--;
+	LDS  R30,_Menue_Cable_Select_Select_Num
+	SUBI R30,LOW(1)
+	STS  _Menue_Cable_Select_Select_Num,R30
+; 0003 0054         if(Menue_Cable_Select_Select_Num<0)
+	LDS  R26,_Menue_Cable_Select_Select_Num
+	CPI  R26,0
+	BRGE _0x60026
+; 0003 0055         {
+; 0003 0056             Menue_Cable_Select_Select_Num=NUM_ROW-1;
+	LDI  R30,LOW(3)
+	STS  _Menue_Cable_Select_Select_Num,R30
+; 0003 0057             Menue_Cable_Select_Num=Menue_Cable_Select_Num-NUM_ROW;
+	LDS  R30,_Menue_Cable_Select_Num
+	SUBI R30,LOW(4)
+	CALL SUBOPT_0x1E
+; 0003 0058             if(Menue_Cable_Select_Num<0)
+	CPI  R26,0
+	BRGE _0x60027
+; 0003 0059                 Menue_Cable_Select_Num=MAX_NUMBER_PROFILE-NUM_ROW;
+	LDI  R30,LOW(8)
+	STS  _Menue_Cable_Select_Num,R30
+; 0003 005A         }
+_0x60027:
+; 0003 005B 
+; 0003 005C     }
+_0x60026:
+; 0003 005D     else if(DOWN_BUTTON_PUSHED==1)
+	RJMP _0x60028
+_0x60023:
+	LDS  R30,_flags_b
+	ANDI R30,LOW(0x1)
+	BRNE _0x6002A
+	LDS  R30,_flags_b
+	ANDI R30,LOW(0x2)
+	BRNE _0x6002A
+	CALL SUBOPT_0x1C
+	BRNE _0x6002A
+	LDI  R30,1
+	RJMP _0x6002B
+_0x6002A:
+	LDI  R30,0
+_0x6002B:
+	CPI  R30,LOW(0x1)
+	BRNE _0x60029
+; 0003 005E     {
+; 0003 005F         flags_b.down=0;
+	CALL SUBOPT_0x1D
+; 0003 0060         Menue_Cable_Select_Select_Num++;
+	LDS  R30,_Menue_Cable_Select_Select_Num
+	SUBI R30,-LOW(1)
+	STS  _Menue_Cable_Select_Select_Num,R30
+; 0003 0061         if(Menue_Cable_Select_Select_Num>=NUM_ROW)
+	LDS  R26,_Menue_Cable_Select_Select_Num
+	CPI  R26,LOW(0x4)
+	BRLT _0x6002C
+; 0003 0062         {
+; 0003 0063             Menue_Cable_Select_Select_Num=0;
+	LDI  R30,LOW(0)
+	STS  _Menue_Cable_Select_Select_Num,R30
+; 0003 0064             Menue_Cable_Select_Num=Menue_Cable_Select_Num+NUM_ROW;
+	LDS  R30,_Menue_Cable_Select_Num
+	SUBI R30,-LOW(4)
+	CALL SUBOPT_0x1E
+; 0003 0065             if(Menue_Cable_Select_Num>=(MAX_NUMBER_PROFILE-1))
+	CPI  R26,LOW(0xB)
+	BRLT _0x6002D
+; 0003 0066                 Menue_Cable_Select_Num=0;
+	LDI  R30,LOW(0)
+	STS  _Menue_Cable_Select_Num,R30
+; 0003 0067         }
+_0x6002D:
+; 0003 0068 
+; 0003 0069     }
+_0x6002C:
+; 0003 006A }
+_0x60029:
+_0x60028:
+_0x60022:
 	RET
 ; .FEND
 ;
 ;void cable_define_button_manager_func(void)
-; 0003 004A {
+; 0003 006D {
 _cable_define_button_manager_func:
 ; .FSTART _cable_define_button_manager_func
-; 0003 004B     if(ENTER_BUTTON_PUSHED==1)
-	CALL SUBOPT_0x15
-	BRNE _0x60026
+; 0003 006E     if(ENTER_BUTTON_PUSHED==1)
+	CALL SUBOPT_0x18
+	BRNE _0x6002F
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x2)
-	BRNE _0x60026
-	LDS  R30,_flags_b
-	ANDI R30,LOW(0x4)
-	BRNE _0x60026
-	LDI  R30,1
-	RJMP _0x60027
-_0x60026:
-	LDI  R30,0
-_0x60027:
-	CPI  R30,LOW(0x1)
-	BRNE _0x60025
-; 0003 004C     {
-; 0003 004D         flags_b.enter=0;
-	CALL SUBOPT_0x16
-; 0003 004E         if (flags_menu.subpage==IN_SELECT)
-	LDS  R30,_flags_menu
-	ANDI R30,LOW(0x7)
-	CPI  R30,LOW(0x2)
-	BRNE _0x60028
-; 0003 004F         {
-; 0003 0050            flags_menu.subpage=OUT_SELECT;
-	LDS  R30,_flags_menu
-	ANDI R30,LOW(0xF8)
-	ORI  R30,LOW(0x3)
-	RJMP _0x60046
-; 0003 0051         }
-; 0003 0052         else if (flags_menu.subpage==OUT_SELECT)
-_0x60028:
-	LDS  R30,_flags_menu
-	ANDI R30,LOW(0x7)
-	CPI  R30,LOW(0x3)
-	BRNE _0x6002A
-; 0003 0053         {
-; 0003 0054             flags_menu.subpage=PROF_SELECT;
-	LDS  R30,_flags_menu
-	ANDI R30,LOW(0xF8)
-	ORI  R30,4
-	RJMP _0x60046
-; 0003 0055         }
-; 0003 0056         else if(flags_menu.subpage==PROF_SELECT)
-_0x6002A:
-	LDS  R30,_flags_menu
-	ANDI R30,LOW(0x7)
-	CPI  R30,LOW(0x4)
-	BRNE _0x6002C
-; 0003 0057         {
-; 0003 0058             flags_menu.subpage=IN_SELECT;
-	LDS  R30,_flags_menu
-	ANDI R30,LOW(0xF8)
-	ORI  R30,2
-_0x60046:
-	STS  _flags_menu,R30
-; 0003 0059         }
-; 0003 005A 
-; 0003 005B     }
-_0x6002C:
-; 0003 005C     else if(UP_BUTTON_PUSHED==1)
-	RJMP _0x6002D
-_0x60025:
-	LDS  R30,_flags_b
-	ANDI R30,LOW(0x1)
-	BRNE _0x6002F
-	CALL SUBOPT_0x17
 	BRNE _0x6002F
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x4)
@@ -2682,164 +2817,233 @@ _0x6002F:
 _0x60030:
 	CPI  R30,LOW(0x1)
 	BRNE _0x6002E
-; 0003 005D     {
-; 0003 005E         flags_b.up=0;
-	CALL SUBOPT_0x18
-; 0003 005F         Menue_Cable_Select_Num++;
-	CALL SUBOPT_0x1B
-; 0003 0060         if(Menue_Cable_Select_Num>MAX_NUMBER_PROFILE)
-	BRLT _0x60031
-; 0003 0061            Menue_Cable_Select_Num=0;
-	LDI  R30,LOW(0)
-	STS  _Menue_Cable_Select_Num,R30
-; 0003 0062     }
+; 0003 006F     {
+; 0003 0070         flags_b.enter=0;
+	CALL SUBOPT_0x19
+; 0003 0071         if (flags_menu.subpage==IN_SELECT)
+	LDS  R30,_flags_menu
+	ANDI R30,LOW(0x7)
+	CPI  R30,LOW(0x2)
+	BRNE _0x60031
+; 0003 0072         {
+; 0003 0073            flags_menu.subpage=OUT_SELECT;
+	LDS  R30,_flags_menu
+	ANDI R30,LOW(0xF8)
+	ORI  R30,LOW(0x3)
+	RJMP _0x6004F
+; 0003 0074         }
+; 0003 0075         else if (flags_menu.subpage==OUT_SELECT)
 _0x60031:
-; 0003 0063     else if(DOWN_BUTTON_PUSHED==1)
-	RJMP _0x60032
+	LDS  R30,_flags_menu
+	ANDI R30,LOW(0x7)
+	CPI  R30,LOW(0x3)
+	BRNE _0x60033
+; 0003 0076         {
+; 0003 0077             flags_menu.subpage=PROF_SELECT;
+	LDS  R30,_flags_menu
+	ANDI R30,LOW(0xF8)
+	ORI  R30,4
+	RJMP _0x6004F
+; 0003 0078         }
+; 0003 0079         else if(flags_menu.subpage==PROF_SELECT)
+_0x60033:
+	LDS  R30,_flags_menu
+	ANDI R30,LOW(0x7)
+	CPI  R30,LOW(0x4)
+	BRNE _0x60035
+; 0003 007A         {
+; 0003 007B             flags_menu.subpage=IN_SELECT;
+	LDS  R30,_flags_menu
+	ANDI R30,LOW(0xF8)
+	ORI  R30,2
+_0x6004F:
+	STS  _flags_menu,R30
+; 0003 007C         }
+; 0003 007D 
+; 0003 007E     }
+_0x60035:
+; 0003 007F     else if(UP_BUTTON_PUSHED==1)
+	RJMP _0x60036
 _0x6002E:
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x1)
-	BRNE _0x60034
-	LDS  R30,_flags_b
-	ANDI R30,LOW(0x2)
-	BRNE _0x60034
-	CALL SUBOPT_0x19
-	BRNE _0x60034
-	LDI  R30,1
-	RJMP _0x60035
-_0x60034:
-	LDI  R30,0
-_0x60035:
-	CPI  R30,LOW(0x1)
-	BRNE _0x60033
-; 0003 0064     {
-; 0003 0065         flags_b.down=0;
+	BRNE _0x60038
 	CALL SUBOPT_0x1A
-; 0003 0066         Menue_Cable_Select_Num--;
-	CALL SUBOPT_0x1C
-; 0003 0067         if(Menue_Cable_Select_Num<0)
-	BRGE _0x60036
-; 0003 0068             Menue_Cable_Select_Num=MAX_NUMBER_PROFILE;
-	LDI  R30,LOW(12)
+	BRNE _0x60038
+	LDS  R30,_flags_b
+	ANDI R30,LOW(0x4)
+	BRNE _0x60038
+	LDI  R30,1
+	RJMP _0x60039
+_0x60038:
+	LDI  R30,0
+_0x60039:
+	CPI  R30,LOW(0x1)
+	BRNE _0x60037
+; 0003 0080     {
+; 0003 0081         flags_b.up=0;
+	CALL SUBOPT_0x1B
+; 0003 0082         Menue_Cable_Select_Num++;
+	LDS  R30,_Menue_Cable_Select_Num
+	SUBI R30,-LOW(1)
+	CALL SUBOPT_0x1E
+; 0003 0083         if(Menue_Cable_Select_Num>MAX_NUMBER_PROFILE)
+	CPI  R26,LOW(0xD)
+	BRLT _0x6003A
+; 0003 0084            Menue_Cable_Select_Num=0;
+	LDI  R30,LOW(0)
 	STS  _Menue_Cable_Select_Num,R30
-; 0003 0069     }
-_0x60036:
-; 0003 006A     else if(EXIT_BUTTON_PUSHED==1)
-	RJMP _0x60037
-_0x60033:
+; 0003 0085     }
+_0x6003A:
+; 0003 0086     else if(DOWN_BUTTON_PUSHED==1)
+	RJMP _0x6003B
+_0x60037:
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x1)
-	BRNE _0x60039
-	CALL SUBOPT_0x17
-	BRNE _0x60039
-	CALL SUBOPT_0x19
-	BRNE _0x60039
+	BRNE _0x6003D
+	LDS  R30,_flags_b
+	ANDI R30,LOW(0x2)
+	BRNE _0x6003D
+	CALL SUBOPT_0x1C
+	BRNE _0x6003D
 	LDI  R30,1
-	RJMP _0x6003A
-_0x60039:
+	RJMP _0x6003E
+_0x6003D:
 	LDI  R30,0
-_0x6003A:
+_0x6003E:
 	CPI  R30,LOW(0x1)
-	BRNE _0x60038
-; 0003 006B     {
-; 0003 006C          flags_b.up=0;
-	CALL SUBOPT_0x18
-; 0003 006D           flags_b.down=0;
+	BRNE _0x6003C
+; 0003 0087     {
+; 0003 0088         flags_b.down=0;
+	CALL SUBOPT_0x1D
+; 0003 0089         Menue_Cable_Select_Num--;
+	LDS  R30,_Menue_Cable_Select_Num
+	SUBI R30,LOW(1)
+	CALL SUBOPT_0x1E
+; 0003 008A         if(Menue_Cable_Select_Num<0)
+	CPI  R26,0
+	BRGE _0x6003F
+; 0003 008B             Menue_Cable_Select_Num=MAX_NUMBER_PROFILE;
+	LDI  R30,LOW(12)
+	STS  _Menue_Cable_Select_Num,R30
+; 0003 008C     }
+_0x6003F:
+; 0003 008D     else if(EXIT_BUTTON_PUSHED==1)
+	RJMP _0x60040
+_0x6003C:
+	LDS  R30,_flags_b
+	ANDI R30,LOW(0x1)
+	BRNE _0x60042
 	CALL SUBOPT_0x1A
-; 0003 006E           page=MAIN_PAGE;
+	BRNE _0x60042
+	CALL SUBOPT_0x1C
+	BRNE _0x60042
+	LDI  R30,1
+	RJMP _0x60043
+_0x60042:
+	LDI  R30,0
+_0x60043:
+	CPI  R30,LOW(0x1)
+	BRNE _0x60041
+; 0003 008E     {
+; 0003 008F          flags_b.up=0;
+	CALL SUBOPT_0x1B
+; 0003 0090           flags_b.down=0;
+	CALL SUBOPT_0x1D
+; 0003 0091           page=MAIN_PAGE;
 	LDI  R30,LOW(4)
 	STS  _page,R30
-; 0003 006F     }
-; 0003 0070 }
-_0x60038:
-_0x60037:
-_0x60032:
-_0x6002D:
+; 0003 0092     }
+; 0003 0093 }
+_0x60041:
+_0x60040:
+_0x6003B:
+_0x60036:
 	RET
 ; .FEND
 ;
 ;void about_me_button_manager_func(void)
-; 0003 0073 {
+; 0003 0096 {
 _about_me_button_manager_func:
 ; .FSTART _about_me_button_manager_func
-; 0003 0074     if(ENTER_BUTTON_PUSHED==1)
-	CALL SUBOPT_0x15
-	BRNE _0x6003C
+; 0003 0097     if(ENTER_BUTTON_PUSHED==1)
+	CALL SUBOPT_0x18
+	BRNE _0x60045
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x2)
-	BRNE _0x6003C
+	BRNE _0x60045
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x4)
-	BRNE _0x6003C
+	BRNE _0x60045
 	LDI  R30,1
-	RJMP _0x6003D
-_0x6003C:
+	RJMP _0x60046
+_0x60045:
 	LDI  R30,0
-_0x6003D:
+_0x60046:
 	CPI  R30,LOW(0x1)
-	BRNE _0x6003B
-; 0003 0075     {
-; 0003 0076          flags_b.enter=0;
+	BRNE _0x60044
+; 0003 0098     {
+; 0003 0099          flags_b.enter=0;
 	LDS  R30,_flags_b
 	ANDI R30,0xFE
-	RJMP _0x60047
-; 0003 0077         page=MAIN_PAGE;
-; 0003 0078     }
-; 0003 0079     else if(UP_BUTTON_PUSHED==1)
-_0x6003B:
+	RJMP _0x60050
+; 0003 009A         page=MAIN_PAGE;
+; 0003 009B     }
+; 0003 009C     else if(UP_BUTTON_PUSHED==1)
+_0x60044:
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x1)
-	BRNE _0x60040
-	CALL SUBOPT_0x17
-	BRNE _0x60040
+	BRNE _0x60049
+	CALL SUBOPT_0x1A
+	BRNE _0x60049
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x4)
-	BRNE _0x60040
+	BRNE _0x60049
 	LDI  R30,1
-	RJMP _0x60041
-_0x60040:
+	RJMP _0x6004A
+_0x60049:
 	LDI  R30,0
-_0x60041:
+_0x6004A:
 	CPI  R30,LOW(0x1)
-	BRNE _0x6003F
-; 0003 007A     {
-; 0003 007B          flags_b.up=0;
+	BRNE _0x60048
+; 0003 009D     {
+; 0003 009E          flags_b.up=0;
 	LDS  R30,_flags_b
 	ANDI R30,0xFD
-	RJMP _0x60047
-; 0003 007C         page=MAIN_PAGE;
-; 0003 007D     }
-; 0003 007E     else if(DOWN_BUTTON_PUSHED==1)
-_0x6003F:
+	RJMP _0x60050
+; 0003 009F         page=MAIN_PAGE;
+; 0003 00A0     }
+; 0003 00A1     else if(DOWN_BUTTON_PUSHED==1)
+_0x60048:
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x1)
-	BRNE _0x60044
+	BRNE _0x6004D
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x2)
-	BRNE _0x60044
-	CALL SUBOPT_0x19
-	BRNE _0x60044
+	BRNE _0x6004D
+	CALL SUBOPT_0x1C
+	BRNE _0x6004D
 	LDI  R30,1
-	RJMP _0x60045
-_0x60044:
+	RJMP _0x6004E
+_0x6004D:
 	LDI  R30,0
-_0x60045:
+_0x6004E:
 	CPI  R30,LOW(0x1)
-	BRNE _0x60043
-; 0003 007F     {
-; 0003 0080          flags_b.down=0;
+	BRNE _0x6004C
+; 0003 00A2     {
+; 0003 00A3          flags_b.down=0;
 	LDS  R30,_flags_b
 	ANDI R30,0xFB
-_0x60047:
+_0x60050:
 	STS  _flags_b,R30
-; 0003 0081         page=MAIN_PAGE;
+; 0003 00A4         page=MAIN_PAGE;
 	LDI  R30,LOW(4)
 	STS  _page,R30
-; 0003 0082     }
-; 0003 0083 
-; 0003 0084 
-; 0003 0085 }
-_0x60043:
+; 0003 00A5     }
+; 0003 00A6 
+; 0003 00A7 
+; 0003 00A8 }
+_0x6004C:
 	RET
 ; .FEND
 ;
@@ -2973,7 +3177,7 @@ _0x2000016:
 	LDI  R17,LOW(1)
 	RJMP _0x200001E
 _0x200001D:
-	CALL SUBOPT_0x1D
+	CALL SUBOPT_0x1F
 _0x200001E:
 	RJMP _0x200001B
 _0x200001C:
@@ -2981,7 +3185,7 @@ _0x200001C:
 	BRNE _0x200001F
 	CPI  R18,37
 	BRNE _0x2000020
-	CALL SUBOPT_0x1D
+	CALL SUBOPT_0x1F
 	RJMP _0x20000CC
 _0x2000020:
 	LDI  R17,LOW(2)
@@ -3038,26 +3242,26 @@ _0x2000029:
 	MOV  R30,R18
 	CPI  R30,LOW(0x63)
 	BRNE _0x200002F
-	CALL SUBOPT_0x1E
+	CALL SUBOPT_0x20
 	LDD  R30,Y+16
 	LDD  R31,Y+16+1
 	LDD  R26,Z+4
 	ST   -Y,R26
-	CALL SUBOPT_0x1F
+	CALL SUBOPT_0x21
 	RJMP _0x2000030
 _0x200002F:
 	CPI  R30,LOW(0x73)
 	BRNE _0x2000032
-	CALL SUBOPT_0x1E
 	CALL SUBOPT_0x20
+	CALL SUBOPT_0x22
 	CALL _strlen
 	MOV  R17,R30
 	RJMP _0x2000033
 _0x2000032:
 	CPI  R30,LOW(0x70)
 	BRNE _0x2000035
-	CALL SUBOPT_0x1E
 	CALL SUBOPT_0x20
+	CALL SUBOPT_0x22
 	CALL _strlenf
 	MOV  R17,R30
 	ORI  R16,LOW(8)
@@ -3102,8 +3306,8 @@ _0x2000040:
 _0x200003D:
 	SBRS R16,2
 	RJMP _0x2000042
-	CALL SUBOPT_0x1E
-	CALL SUBOPT_0x21
+	CALL SUBOPT_0x20
+	CALL SUBOPT_0x23
 	LDD  R26,Y+11
 	TST  R26
 	BRPL _0x2000043
@@ -3123,8 +3327,8 @@ _0x2000044:
 _0x2000045:
 	RJMP _0x2000046
 _0x2000042:
-	CALL SUBOPT_0x1E
-	CALL SUBOPT_0x21
+	CALL SUBOPT_0x20
+	CALL SUBOPT_0x23
 _0x2000046:
 _0x2000036:
 	SBRC R16,0
@@ -3147,7 +3351,7 @@ _0x200004D:
 _0x200004B:
 	LDI  R18,LOW(32)
 _0x200004E:
-	CALL SUBOPT_0x1D
+	CALL SUBOPT_0x1F
 	SUBI R21,LOW(1)
 	RJMP _0x2000048
 _0x200004A:
@@ -3173,7 +3377,7 @@ _0x2000053:
 	STD  Y+6,R26
 	STD  Y+6+1,R27
 _0x2000054:
-	CALL SUBOPT_0x1D
+	CALL SUBOPT_0x1F
 	CPI  R21,0
 	BREQ _0x2000055
 	SUBI R21,LOW(1)
@@ -3252,7 +3456,7 @@ _0x20000CD:
 	RJMP _0x200006A
 	ANDI R16,LOW(251)
 	ST   -Y,R20
-	CALL SUBOPT_0x1F
+	CALL SUBOPT_0x21
 	CPI  R21,0
 	BREQ _0x200006B
 	SUBI R21,LOW(1)
@@ -3260,7 +3464,7 @@ _0x200006B:
 _0x200006A:
 _0x2000069:
 _0x2000061:
-	CALL SUBOPT_0x1D
+	CALL SUBOPT_0x1F
 	CPI  R21,0
 	BREQ _0x200006C
 	SUBI R21,LOW(1)
@@ -3282,7 +3486,7 @@ _0x200006E:
 	SUBI R21,LOW(1)
 	LDI  R30,LOW(32)
 	ST   -Y,R30
-	CALL SUBOPT_0x1F
+	CALL SUBOPT_0x21
 	RJMP _0x200006E
 _0x2000070:
 _0x200006D:
@@ -3307,7 +3511,7 @@ _sprintf:
 	MOV  R15,R24
 	SBIW R28,6
 	CALL __SAVELOCR4
-	CALL SUBOPT_0x22
+	CALL SUBOPT_0x24
 	SBIW R30,0
 	BRNE _0x2000072
 	LDI  R30,LOW(65535)
@@ -3318,13 +3522,13 @@ _0x2000072:
 	ADIW R26,6
 	CALL __ADDW2R15
 	MOVW R16,R26
-	CALL SUBOPT_0x22
+	CALL SUBOPT_0x24
 	STD  Y+6,R30
 	STD  Y+6+1,R31
 	LDI  R30,LOW(0)
 	STD  Y+8,R30
 	STD  Y+8+1,R30
-	CALL SUBOPT_0x23
+	CALL SUBOPT_0x25
 	RJMP _0x20C0004
 ; .FEND
 _snprintf:
@@ -3334,27 +3538,27 @@ _snprintf:
 	SBIW R28,6
 	CALL __SAVELOCR4
 	__GETWRN 18,19,0
-	CALL SUBOPT_0x24
+	CALL SUBOPT_0x26
 	SBIW R30,0
 	BRNE _0x2000073
 	LDI  R30,LOW(65535)
 	LDI  R31,HIGH(65535)
 	RJMP _0x20C0003
 _0x2000073:
-	CALL SUBOPT_0x22
+	CALL SUBOPT_0x24
 	SBIW R30,0
 	BREQ _0x2000074
 	MOVW R26,R28
 	ADIW R26,6
 	CALL __ADDW2R15
 	MOVW R16,R26
-	CALL SUBOPT_0x24
+	CALL SUBOPT_0x26
 	STD  Y+6,R30
 	STD  Y+6+1,R31
-	CALL SUBOPT_0x22
+	CALL SUBOPT_0x24
 	STD  Y+8,R30
 	STD  Y+8+1,R31
-	CALL SUBOPT_0x23
+	CALL SUBOPT_0x25
 _0x2000074:
 _0x20C0004:
 	MOVW R30,R18
@@ -3516,11 +3720,11 @@ _lcd_gotoxy:
 _lcd_clear:
 ; .FSTART _lcd_clear
 	LDI  R26,LOW(2)
-	CALL SUBOPT_0x25
+	CALL SUBOPT_0x27
 	LDI  R26,LOW(12)
 	RCALL __lcd_write_data
 	LDI  R26,LOW(1)
-	CALL SUBOPT_0x25
+	CALL SUBOPT_0x27
 	LDI  R30,LOW(0)
 	MOV  R4,R30
 	MOV  R5,R30
@@ -3597,9 +3801,9 @@ _lcd_init:
 	LDI  R26,LOW(20)
 	LDI  R27,0
 	CALL _delay_ms
-	CALL SUBOPT_0x26
-	CALL SUBOPT_0x26
-	CALL SUBOPT_0x26
+	CALL SUBOPT_0x28
+	CALL SUBOPT_0x28
+	CALL SUBOPT_0x28
 	LDI  R26,LOW(32)
 	RCALL __lcd_write_nibble_G103
 	__DELAY_USW 200
@@ -3642,7 +3846,11 @@ _Read_Pin:
 	.BYTE 0x2
 _Menue_Main_Num:
 	.BYTE 0x1
+_Menue_Main_Select_Num:
+	.BYTE 0x1
 _Menue_Cable_Select_Num:
+	.BYTE 0x1
+_Menue_Cable_Select_Select_Num:
 	.BYTE 0x1
 _Menu_Cable_Define_Prof:
 	.BYTE 0x1
@@ -3661,89 +3869,137 @@ _page:
 _flags_b:
 	.BYTE 0x1
 _Menue_Main_Srting:
-	.BYTE 0x40
+	.BYTE 0x54
+_Menue_Main_Arrow_String:
+	.BYTE 0x6
 _lcd_buffer:
-	.BYTE 0x10
+	.BYTE 0x14
 __seed_G101:
 	.BYTE 0x4
 __base_y_G103:
 	.BYTE 0x4
 
 	.CSEG
-;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:18 WORDS
+;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:1 WORDS
 SUBOPT_0x0:
+	CALL __SAVELOCR4
+	__GETWRN 16,17,0
+	LDI  R19,0
+	LDI  R19,LOW(0)
+	RET
+
+;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:18 WORDS
+SUBOPT_0x1:
 	LDI  R30,LOW(0)
 	ST   -Y,R30
-	LDI  R26,LOW(0)
+	MOV  R26,R19
 	CALL _lcd_gotoxy
 	LDI  R30,LOW(_lcd_buffer)
 	LDI  R31,HIGH(_lcd_buffer)
 	ST   -Y,R31
 	ST   -Y,R30
-	RET
-
-;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:9 WORDS
-SUBOPT_0x1:
-	LDI  R30,LOW(0)
+	LDI  R30,LOW(32)
 	ST   -Y,R30
-	LDI  R26,LOW(16)
+	LDI  R26,LOW(20)
 	LDI  R27,0
 	CALL _memset
 	LDI  R30,LOW(_lcd_buffer)
 	LDI  R31,HIGH(_lcd_buffer)
 	ST   -Y,R31
 	ST   -Y,R30
-	LDI  R30,LOW(16)
-	LDI  R31,HIGH(16)
+	LDI  R30,LOW(20)
+	LDI  R31,HIGH(20)
 	ST   -Y,R31
 	ST   -Y,R30
 	RET
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:11 WORDS
+;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:9 WORDS
 SUBOPT_0x2:
-	CALL __LSLW4
-	SUBI R30,LOW(-_Menue_Main_Srting)
-	SBCI R31,HIGH(-_Menue_Main_Srting)
+	LDI  R31,0
+	SBRC R30,7
+	SER  R31
+	CALL __EQW12
+	LDI  R26,LOW(3)
+	MUL  R30,R26
+	MOVW R30,R0
+	SUBI R30,LOW(-_Menue_Main_Arrow_String)
+	SBCI R31,HIGH(-_Menue_Main_Arrow_String)
 	CLR  R22
 	CLR  R23
 	CALL __PUTPARD1
-	LDI  R24,4
+	RET
+
+;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:2 WORDS
+SUBOPT_0x3:
+	LDI  R27,0
+	SBRC R26,7
+	SER  R27
+	MOV  R30,R19
+	LDI  R31,0
+	ADD  R30,R26
+	ADC  R31,R27
+	RET
+
+;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:5 WORDS
+SUBOPT_0x4:
+	CALL __PUTPARD1
+	LDI  R24,8
 	CALL _snprintf
-	ADIW R28,10
+	ADIW R28,14
+	MOVW R16,R30
+	__CPWRN 16,17,20
+	RET
+
+;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:9 WORDS
+SUBOPT_0x5:
+	MOVW R30,R16
+	SUBI R30,LOW(-_lcd_buffer)
+	SBCI R31,HIGH(-_lcd_buffer)
+	ST   -Y,R31
+	ST   -Y,R30
+	LDI  R30,LOW(32)
+	ST   -Y,R30
+	LDI  R30,LOW(20)
+	LDI  R31,HIGH(20)
+	SUB  R30,R16
+	SBC  R31,R17
+	MOVW R26,R30
+	JMP  _memset
+
+;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:2 WORDS
+SUBOPT_0x6:
+	LDI  R30,LOW(0)
+	__PUTB1MN _lcd_buffer,20
 	LDI  R26,LOW(_lcd_buffer)
 	LDI  R27,HIGH(_lcd_buffer)
 	JMP  _lcd_puts
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 6 TIMES, CODE SIZE REDUCTION:32 WORDS
-SUBOPT_0x3:
+;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:3 WORDS
+SUBOPT_0x7:
 	LDI  R30,LOW(0)
 	ST   -Y,R30
-	LDI  R26,LOW(1)
-	CALL _lcd_gotoxy
+	LDI  R26,LOW(0)
+	JMP  _lcd_gotoxy
+
+;OPTIMIZER ADDED SUBROUTINE, CALLED 14 TIMES, CODE SIZE REDUCTION:23 WORDS
+SUBOPT_0x8:
 	LDI  R30,LOW(_lcd_buffer)
 	LDI  R31,HIGH(_lcd_buffer)
 	ST   -Y,R31
 	ST   -Y,R30
 	RET
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:9 WORDS
-SUBOPT_0x4:
-	LDI  R30,LOW(_lcd_buffer)
-	LDI  R31,HIGH(_lcd_buffer)
-	ST   -Y,R31
+;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:9 WORDS
+SUBOPT_0x9:
+	LDI  R30,LOW(32)
 	ST   -Y,R30
-	LDI  R30,LOW(0)
-	ST   -Y,R30
-	LDI  R26,LOW(16)
+	LDI  R26,LOW(20)
 	LDI  R27,0
 	CALL _memset
-	LDS  R30,_flag
-	ANDI R30,LOW(0x8)
-	CPI  R30,LOW(0x8)
-	RET
+	RJMP SUBOPT_0x8
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:21 WORDS
-SUBOPT_0x5:
+;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:13 WORDS
+SUBOPT_0xA:
 	CALL __PUTPARD1
 	LDI  R24,4
 	CALL _sprintf
@@ -3752,35 +4008,23 @@ SUBOPT_0x5:
 	LDI  R27,HIGH(_lcd_buffer)
 	JMP  _lcd_puts
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:13 WORDS
-SUBOPT_0x6:
-	LDI  R30,LOW(32)
+;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:12 WORDS
+SUBOPT_0xB:
+	LDI  R30,LOW(0)
 	ST   -Y,R30
-	LDI  R26,LOW(16)
-	LDI  R27,0
-	CALL _memset
-	LDI  R30,LOW(_lcd_buffer)
-	LDI  R31,HIGH(_lcd_buffer)
-	ST   -Y,R31
-	ST   -Y,R30
-	RET
-
-;OPTIMIZER ADDED SUBROUTINE, CALLED 5 TIMES, CODE SIZE REDUCTION:5 WORDS
-SUBOPT_0x7:
-	LDI  R24,0
-	CALL _sprintf
-	ADIW R28,4
-	RET
+	LDI  R26,LOW(1)
+	CALL _lcd_gotoxy
+	RJMP SUBOPT_0x8
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:6 WORDS
-SUBOPT_0x8:
+SUBOPT_0xC:
 	LDS  R30,_Menu_Cable_Define_Prof
 	LDI  R31,0
 	CALL __LSLW3
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:1 WORDS
-SUBOPT_0x9:
+SUBOPT_0xD:
 	SUBI R30,LOW(-_In_profile)
 	SBCI R31,HIGH(-_In_profile)
 	MOVW R26,R30
@@ -3789,7 +4033,7 @@ SUBOPT_0x9:
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:1 WORDS
-SUBOPT_0xA:
+SUBOPT_0xE:
 	SUBI R30,LOW(-_Out_profile)
 	SBCI R31,HIGH(-_Out_profile)
 	MOVW R26,R30
@@ -3797,16 +4041,8 @@ SUBOPT_0xA:
 	LDI  R31,0
 	RET
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 5 TIMES, CODE SIZE REDUCTION:5 WORDS
-SUBOPT_0xB:
-	LDI  R30,LOW(_lcd_buffer)
-	LDI  R31,HIGH(_lcd_buffer)
-	ST   -Y,R31
-	ST   -Y,R30
-	RET
-
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:3 WORDS
-SUBOPT_0xC:
+SUBOPT_0xF:
 	ADD  R26,R30
 	ADC  R27,R31
 	LD   R30,X
@@ -3817,21 +4053,24 @@ SUBOPT_0xC:
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:1 WORDS
-SUBOPT_0xD:
+SUBOPT_0x10:
 	LDI  R30,LOW(0)
 	ST   -Y,R30
-	LDI  R26,LOW(16)
+	LDI  R26,LOW(20)
 	LDI  R27,0
 	JMP  _memset
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:3 WORDS
-SUBOPT_0xE:
+;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:9 WORDS
+SUBOPT_0x11:
 	ST   -Y,R31
 	ST   -Y,R30
-	RJMP SUBOPT_0x7
+	LDI  R24,0
+	CALL _sprintf
+	ADIW R28,4
+	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:2 WORDS
-SUBOPT_0xF:
+SUBOPT_0x12:
 	ST   -Y,R31
 	ST   -Y,R30
 	__GETB1MN _cable_func_handle,17
@@ -3840,7 +4079,7 @@ SUBOPT_0xF:
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:1 WORDS
-SUBOPT_0x10:
+SUBOPT_0x13:
 	ST   -Y,R31
 	ST   -Y,R30
 	LDI  R26,LOW(8)
@@ -3848,7 +4087,7 @@ SUBOPT_0x10:
 	JMP  _memcpy
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:7 WORDS
-SUBOPT_0x11:
+SUBOPT_0x14:
 	__CALL1MN _Read_Pin,0
 	MOV  R26,R30
 	MOV  R30,R16
@@ -3860,14 +4099,14 @@ SUBOPT_0x11:
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:3 WORDS
-SUBOPT_0x12:
+SUBOPT_0x15:
 	LDS  R30,_flag
 	ORI  R30,1
 	STS  _flag,R30
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 6 TIMES, CODE SIZE REDUCTION:7 WORDS
-SUBOPT_0x13:
+SUBOPT_0x16:
 	MOV  R30,R17
 	LDI  R31,0
 	SUBI R30,LOW(-_cable_func_handle)
@@ -3875,75 +4114,63 @@ SUBOPT_0x13:
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:6 WORDS
-SUBOPT_0x14:
+SUBOPT_0x17:
 	__POINTW2MN _cable_func_handle,9
 	CLR  R30
 	ADD  R26,R17
 	ADC  R27,R30
 	RET
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:3 WORDS
-SUBOPT_0x15:
+;OPTIMIZER ADDED SUBROUTINE, CALLED 5 TIMES, CODE SIZE REDUCTION:5 WORDS
+SUBOPT_0x18:
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x1)
 	CPI  R30,LOW(0x1)
 	RET
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:3 WORDS
-SUBOPT_0x16:
+;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:6 WORDS
+SUBOPT_0x19:
 	LDS  R30,_flags_b
 	ANDI R30,0xFE
 	STS  _flags_b,R30
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 5 TIMES, CODE SIZE REDUCTION:5 WORDS
-SUBOPT_0x17:
+SUBOPT_0x1A:
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x2)
 	CPI  R30,LOW(0x2)
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:6 WORDS
-SUBOPT_0x18:
+SUBOPT_0x1B:
 	LDS  R30,_flags_b
 	ANDI R30,0xFD
 	STS  _flags_b,R30
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 5 TIMES, CODE SIZE REDUCTION:5 WORDS
-SUBOPT_0x19:
+SUBOPT_0x1C:
 	LDS  R30,_flags_b
 	ANDI R30,LOW(0x4)
 	CPI  R30,LOW(0x4)
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:6 WORDS
-SUBOPT_0x1A:
+SUBOPT_0x1D:
 	LDS  R30,_flags_b
 	ANDI R30,0xFB
 	STS  _flags_b,R30
 	RET
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:3 WORDS
-SUBOPT_0x1B:
-	LDS  R30,_Menue_Cable_Select_Num
-	SUBI R30,-LOW(1)
+;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:3 WORDS
+SUBOPT_0x1E:
 	STS  _Menue_Cable_Select_Num,R30
 	LDS  R26,_Menue_Cable_Select_Num
-	CPI  R26,LOW(0xD)
-	RET
-
-;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:3 WORDS
-SUBOPT_0x1C:
-	LDS  R30,_Menue_Cable_Select_Num
-	SUBI R30,LOW(1)
-	STS  _Menue_Cable_Select_Num,R30
-	LDS  R26,_Menue_Cable_Select_Num
-	CPI  R26,0
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 5 TIMES, CODE SIZE REDUCTION:13 WORDS
-SUBOPT_0x1D:
+SUBOPT_0x1F:
 	ST   -Y,R18
 	LDD  R26,Y+13
 	LDD  R27,Y+13+1
@@ -3953,7 +4180,7 @@ SUBOPT_0x1D:
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 5 TIMES, CODE SIZE REDUCTION:9 WORDS
-SUBOPT_0x1E:
+SUBOPT_0x20:
 	LDD  R30,Y+16
 	LDD  R31,Y+16+1
 	SBIW R30,4
@@ -3962,7 +4189,7 @@ SUBOPT_0x1E:
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:3 WORDS
-SUBOPT_0x1F:
+SUBOPT_0x21:
 	LDD  R26,Y+13
 	LDD  R27,Y+13+1
 	LDD  R30,Y+15
@@ -3971,7 +4198,7 @@ SUBOPT_0x1F:
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:4 WORDS
-SUBOPT_0x20:
+SUBOPT_0x22:
 	LDD  R26,Y+16
 	LDD  R27,Y+16+1
 	ADIW R26,4
@@ -3983,7 +4210,7 @@ SUBOPT_0x20:
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:2 WORDS
-SUBOPT_0x21:
+SUBOPT_0x23:
 	LDD  R26,Y+16
 	LDD  R27,Y+16+1
 	ADIW R26,4
@@ -3993,7 +4220,7 @@ SUBOPT_0x21:
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:9 WORDS
-SUBOPT_0x22:
+SUBOPT_0x24:
 	MOVW R26,R28
 	ADIW R26,12
 	CALL __ADDW2R15
@@ -4001,7 +4228,7 @@ SUBOPT_0x22:
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:18 WORDS
-SUBOPT_0x23:
+SUBOPT_0x25:
 	MOVW R26,R28
 	ADIW R26,10
 	CALL __ADDW2R15
@@ -4025,7 +4252,7 @@ SUBOPT_0x23:
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:1 WORDS
-SUBOPT_0x24:
+SUBOPT_0x26:
 	MOVW R26,R28
 	ADIW R26,14
 	CALL __ADDW2R15
@@ -4033,14 +4260,14 @@ SUBOPT_0x24:
 	RET
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:1 WORDS
-SUBOPT_0x25:
+SUBOPT_0x27:
 	CALL __lcd_write_data
 	LDI  R26,LOW(3)
 	LDI  R27,0
 	JMP  _delay_ms
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:7 WORDS
-SUBOPT_0x26:
+SUBOPT_0x28:
 	LDI  R26,LOW(48)
 	CALL __lcd_write_nibble_G103
 	__DELAY_USW 200
@@ -4071,9 +4298,6 @@ __ANEGW1:
 	SBCI R31,0
 	RET
 
-__LSLW4:
-	LSL  R30
-	ROL  R31
 __LSLW3:
 	LSL  R30
 	ROL  R31
@@ -4084,19 +4308,30 @@ __LSLW2:
 	ROL  R31
 	RET
 
-__CBD1:
-	MOV  R31,R30
-	ADD  R31,R31
-	SBC  R31,R31
-	MOV  R22,R31
-	MOV  R23,R31
-	RET
-
 __CWD1:
 	MOV  R22,R31
 	ADD  R22,R22
 	SBC  R22,R22
 	MOV  R23,R22
+	RET
+
+__EQW12:
+	CP   R30,R26
+	CPC  R31,R27
+	LDI  R30,1
+	BREQ __EQW12T
+	CLR  R30
+__EQW12T:
+	RET
+
+__MULW12U:
+	MUL  R31,R26
+	MOV  R31,R0
+	MUL  R30,R27
+	ADD  R31,R0
+	MUL  R30,R26
+	MOV  R30,R0
+	ADD  R31,R1
 	RET
 
 __GETW1P:
