@@ -1,0 +1,17 @@
+Board Information Report
+Filename     : B:\MyProject\Work\NSC\NSC_HamidSaeedi\HardWare\HardWareIDesigned\Cable_Test\cable_test.PcbDoc
+Date         : 12/25/2025
+Time         : 11:50:46 AM
+Time Elapsed : 00:00:00
+
+General
+    Board Size, 86.36mmx42.418mm
+    Components on board, 110
+count : 2
+
+Routing Information
+    Routing completion, 100.00%
+    Connections, 257
+    Connections routed, 257
+    Connections remaining, 0
+count : 4
