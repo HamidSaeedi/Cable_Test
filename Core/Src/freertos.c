@@ -1,0 +1,228 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * File Name          : freertos.c
+  * Description        : Code for freertos applications
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2026 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+
+/* Includes ------------------------------------------------------------------*/
+#include "FreeRTOS.h"
+#include "task.h"
+#include "main.h"
+#include "cmsis_os.h"
+
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+#include "usart.h"
+#include "embedded_cli.h"
+#include <string.h>
+#include <math.h>
+/* USER CODE END Includes */
+
+/* Private typedef -----------------------------------------------------------*/
+/* USER CODE BEGIN PTD */
+
+/* USER CODE END PTD */
+
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+
+/* USER CODE END PD */
+
+/* Private macro -------------------------------------------------------------*/
+/* USER CODE BEGIN PM */
+
+/* USER CODE END PM */
+
+/* Private variables ---------------------------------------------------------*/
+/* USER CODE BEGIN Variables */
+osThreadId clitaskkHandle;
+uint8_t buf;
+uint8_t recflag=0;
+/* USER CODE END Variables */
+osThreadId defaultTaskHandle;
+
+/* Private function prototypes -----------------------------------------------*/
+/* USER CODE BEGIN FunctionPrototypes */
+void cli_task(void const * argument);
+void writeChar(EmbeddedCli *embeddedCli, char c);
+void led(EmbeddedCli *cli, char *args, void *context);
+void led_off(EmbeddedCli *cli, char *args, void *context);
+/* USER CODE END FunctionPrototypes */
+
+void StartDefaultTask(void const * argument);
+
+void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
+
+/* GetIdleTaskMemory prototype (linked to static allocation support) */
+void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackType_t **ppxIdleTaskStackBuffer, uint32_t *pulIdleTaskStackSize );
+
+/* USER CODE BEGIN GET_IDLE_TASK_MEMORY */
+static StaticTask_t xIdleTaskTCBBuffer;
+static StackType_t xIdleStack[configMINIMAL_STACK_SIZE];
+
+void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackType_t **ppxIdleTaskStackBuffer, uint32_t *pulIdleTaskStackSize )
+{
+  *ppxIdleTaskTCBBuffer = &xIdleTaskTCBBuffer;
+  *ppxIdleTaskStackBuffer = &xIdleStack[0];
+  *pulIdleTaskStackSize = configMINIMAL_STACK_SIZE;
+  /* place for user code */
+}
+/* USER CODE END GET_IDLE_TASK_MEMORY */
+
+/**
+  * @brief  FreeRTOS initialization
+  * @param  None
+  * @retval None
+  */
+void MX_FREERTOS_Init(void) {
+  /* USER CODE BEGIN Init */
+
+  /* USER CODE END Init */
+
+  /* USER CODE BEGIN RTOS_MUTEX */
+  /* add mutexes, ... */
+  /* USER CODE END RTOS_MUTEX */
+
+  /* USER CODE BEGIN RTOS_SEMAPHORES */
+  /* add semaphores, ... */
+  /* USER CODE END RTOS_SEMAPHORES */
+
+  /* USER CODE BEGIN RTOS_TIMERS */
+  /* start timers, add new ones, ... */
+  /* USER CODE END RTOS_TIMERS */
+
+  /* USER CODE BEGIN RTOS_QUEUES */
+  /* add queues, ... */
+  /* USER CODE END RTOS_QUEUES */
+
+  /* Create the thread(s) */
+  /* definition and creation of defaultTask */
+  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
+  defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+
+  /* USER CODE BEGIN RTOS_THREADS */
+  //osThreadDef(clitask,cli_task, osPriorityNormal, 0, 128);
+  //clitaskkHandle = osThreadCreate(osThread(clitask), NULL);
+  /* add threads, ... */
+  /* USER CODE END RTOS_THREADS */
+
+}
+
+/* USER CODE BEGIN Header_StartDefaultTask */
+/**
+  * @brief  Function implementing the defaultTask thread.
+  * @param  argument: Not used
+  * @retval None
+  */
+/* USER CODE END Header_StartDefaultTask */
+void StartDefaultTask(void const * argument)
+{
+  /* USER CODE BEGIN StartDefaultTask */
+	  osThreadDef(clitask,cli_task, osPriorityNormal, 0, 128);
+	  clitaskkHandle = osThreadCreate(osThread(clitask), NULL);
+	  osThreadTerminate(defaultTaskHandle);
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(100);
+    HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+  }
+  /* USER CODE END StartDefaultTask */
+}
+
+/* Private application code --------------------------------------------------*/
+/* USER CODE BEGIN Application */
+
+void cli_task(void const * argument)
+{
+
+	EmbeddedCliConfig *config = embeddedCliDefaultConfig();
+	EmbeddedCli *cli = embeddedCliNew(config);
+	cli->writeChar = writeChar;
+	CliCommandBinding binding1 = {"led", "LEDX will turn on and off", false, NULL, led};
+	 embeddedCliAddBinding(cli, binding1);
+	CliCommandBinding binding2 = {"led-off", "LED1 will turn off", false, NULL, led_off};
+	 embeddedCliAddBinding(cli, binding2);
+	 HAL_UART_Receive_IT(&huart1,&buf,1);
+	while(1)
+	{
+		osDelay(100);
+		embeddedCliProcess(cli);
+		if(recflag == 1)
+		{
+			recflag = 0;
+			embeddedCliReceiveChar(cli, buf);
+		}
+
+	}
+}
+
+void writeChar(EmbeddedCli *embeddedCli, char c)
+{
+    //usart_transmit(&c);
+	HAL_UART_Transmit(&huart1,&c,1,1);
+
+}
+
+void led(EmbeddedCli *cli, char *args, void *context)
+{
+	uint8_t count=0;
+	const char *arg1;
+	const char *arg2;
+	embeddedCliTokenizeArgs(args);
+	count = embeddedCliGetTokenCount(args);
+	arg1 = embeddedCliGetToken(args,1);
+	arg2 = embeddedCliGetToken(args,2);
+	if(strcmp(arg1,"1")==0)
+	{
+		if(strcmp(arg2,"on")==0)
+		{
+			HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, SET);
+		}
+		else if(strcmp(arg2,"off")==0)
+		{
+			HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, RESET);
+		}
+	}
+	else if(strcmp(arg1,"2")==0)
+	{
+		if(strcmp(arg2,"on")==0)
+		{
+			HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, SET);
+		}
+		else if(strcmp(arg2,"off")==0)
+		{
+			HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, RESET);
+		}
+	}
+
+
+}
+
+void led_off(EmbeddedCli *cli, char *args, void *context)
+{
+	HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, RESET);
+}
+
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+
+	 recflag = 1;
+	 HAL_UART_Receive_IT(&huart1,&buf,1);
+}
+
+/* USER CODE END Application */
