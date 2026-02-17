@@ -25,10 +25,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "usart.h"
-#include "embedded_cli.h"
-#include <string.h>
-#include <math.h>
+#include "cli_command.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -149,14 +147,11 @@ void StartDefaultTask(void const * argument)
 void cli_task(void const * argument)
 {
 
-	EmbeddedCliConfig *config = embeddedCliDefaultConfig();
-	EmbeddedCli *cli = embeddedCliNew(config);
-	cli->writeChar = writeChar;
-	CliCommandBinding binding1 = {"led", "LEDX will turn on and off", false, NULL, led};
-	 embeddedCliAddBinding(cli, binding1);
-	CliCommandBinding binding2 = {"led-off", "LED1 will turn off", false, NULL, led_off};
-	 embeddedCliAddBinding(cli, binding2);
-	 HAL_UART_Receive_IT(&huart1,&buf,1);
+	cli_init();
+	//CliCommandBinding binding1 = {"led", "LEDX will turn on and off", false, NULL, led};
+	//embeddedCliAddBinding(cli, binding1);
+
+
 	while(1)
 	{
 		osDelay(100);
@@ -170,52 +165,11 @@ void cli_task(void const * argument)
 	}
 }
 
-void writeChar(EmbeddedCli *embeddedCli, char c)
-{
-    //usart_transmit(&c);
-	HAL_UART_Transmit(&huart1,&c,1,1);
-
-}
-
-void led(EmbeddedCli *cli, char *args, void *context)
-{
-	uint8_t count=0;
-	const char *arg1;
-	const char *arg2;
-	embeddedCliTokenizeArgs(args);
-	count = embeddedCliGetTokenCount(args);
-	arg1 = embeddedCliGetToken(args,1);
-	arg2 = embeddedCliGetToken(args,2);
-	if(strcmp(arg1,"1")==0)
-	{
-		if(strcmp(arg2,"on")==0)
-		{
-			HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, SET);
-		}
-		else if(strcmp(arg2,"off")==0)
-		{
-			HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, RESET);
-		}
-	}
-	else if(strcmp(arg1,"2")==0)
-	{
-		if(strcmp(arg2,"on")==0)
-		{
-			HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, SET);
-		}
-		else if(strcmp(arg2,"off")==0)
-		{
-			HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, RESET);
-		}
-	}
 
 
-}
 
-void led_off(EmbeddedCli *cli, char *args, void *context)
-{
-	HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, RESET);
-}
+
+
 
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
